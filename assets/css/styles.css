@@ -5,6 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+li{list-style: none;}
+
 /*  TOP AREA   */
 
 .top-area{padding: 15px 0;}
@@ -61,10 +63,53 @@ header .main-menu .menu-link{background-color: #dfe1e3;color: black;font-size: 1
 .best-seller .tophead h2{font-size: 48px;font-weight: 700;color: #262626;text-align: center;margin-bottom: 150px;}
 .best-seller-wrapper{background-color: #f9ecd7;}
 .best-seller .best-seller-wrapper .images-grid-area img{margin-top: -80px;}
-.best-seller .best-seller-wrapper .title h4{font-size: 24px;font-weight: 700;text-align: center;}
+.best-seller .best-seller-wrapper .title h4{margin-top:14px;font-size: 24px;font-weight: 700;text-align: center;}
 .best-seller .best-seller-wrapper .details span{margin-right: 24px;color: #262626;font-weight: 600;}
-.best-seller .best-seller-wrapper .details .actions a{background-color:#262626;color: #fff;font-size: 15px;font-weight: 600;display: in;}
+.best-seller .best-seller-wrapper .details .actions a{background-color:#262626;color: #fff;font-size: 15px;font-weight: 600;display: inline-block;height: 45px;line-height: 45px;padding: 0 22px;}
+.best-seller .best-seller-wrapper .details{display: flex;justify-content: center;margin-top: 30px;}
+.best-seller .best-seller-wrapper .online-florists{margin-top: 60px;}
+.best-seller .best-seller-wrapper .online-florists h3{font-size: 40px;color: #262626;font-weight: bold;}
+.best-seller .best-seller-wrapper .online-florists img{height: 32px;}
+.best-seller .best-seller-wrapper .online-florists .florist-box{background-color: #fff;padding: 20px 28px;}
+.best-seller .best-seller-wrapper .online-florists .star{margin-right:3px;color:#fff;font-size:13px;height: 20px;width: 20px;background-color: #00b67a;display: flex;justify-content: center;align-items: center;}
+.best-seller .best-seller-wrapper .online-florists .text p{color: #262626;font-size: 15px;padding-top: 15px;}
+.best-seller .best-seller-wrapper .online-florists .review p{font-size: 13px;color: #262626;padding-top: 7px;}
+.best-seller .best-seller-wrapper .happiness-image{margin-left: 70px;}
+.best-seller .best-seller-wrapper .happiness-image img{height: 217px;}
+.best-seller .best-seller-wrapper .happiness-image p{width: 20%;text-align: center;position: relative;top: -80px;left: 70px;color: #262626;}
+.best-seller .best-seller-wrapper .happiness-image p a{color: #262626;font-weight: 600;text-decoration: underline;}
+
+/*   ABOUT US   */
+
+.about-us .tophead h2{color: #262626;font-size: 48px;font-weight: bold;}
+.about-us .tophead h4 a{color: #262626;font-size: 22px;font-weight: 600;text-decoration: none;}
+.about-us .tophead h4 a img{margin-left: 10px;}
+.about-us .tophead h4:hover{transform: translateX(30px);transition: 0.2s ease-in-out;}
+.about-us .about-us-box .details{padding: 22px 30px;}
+.about-us .about-us-box .details h4{color: #262626;font-size: 24px;font-weight: 700;}
+.about-us .about-us-box .details p{color: #262626;font-size: 16px;padding-top: 14px;}
+.about-us .about-us-box .details .actions a{color: #262626;font-weight: 600;}
+.about-us .about-us-box .details .actions a img{padding-left: 5px;}
+
+/*   ABOUT IMAGE   */
+
+.about-image .picture img{width: 100%;}
+
+/*   ABBOUT US CONTENT  */
+
+.about-us-content{padding: 80px 0;}
+.about-us-content .about-content-box h4{color: #262626;font-weight: 700;font-size: 24px;}
+.about-us-content .about-content-box .actions a{color: #262626;font-weight: 600;text-decoration: underline;}
+.about-us-content .about-content-box p{color: #262626; font-size: 14px;}
+.about-us-content .about-content-box .list-items a{color: #262626;font-size: 14px;margin-bottom: 8px;display: inline-block;padding: 0 10px;}
 
 
+/*   FOOTER   */
 
-
+footer{background-color: #f9ecd7;padding: 70px 0;}
+footer .footer-wrapper .logo img{width: 100%;}
+footer .footer-wrapper .contact h5{color: #262626; font-size: 16px;}
+footer .footer-wrapper .contact .fa{font-size: 20px;margin-right: 25px;margin-top: 10px;}
+footer .footer-wrapper .contact img{width: 90px;margin-top: 10px;}
+footer .footer-wrapper .footer-box h4{color: #262626;margin-bottom: 10px;font-weight: 500;font-size: 18px;}
+footer .footer-wrapper .footer-box a{color: #262626;font-size: 15px;display: inline-block;margin-bottom: 8px;}
