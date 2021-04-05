@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  TOP AREA   */
+
+.top-area{padding: 15px 0;}
+.top-area .top-area-content .register a{color: #262626;} 
+.top-area .top-area-content h4{font-size: 17px;margin-bottom:  0 !important;}
+.top-area .top-area-content .login img{height: 25px;margin-right: 3px;}
+.top-area .top-area-content .logo img{height: 96px;} 
+.top-area .top-area-content .ship-country img{height: 17px;} 
+.top-area .top-area-content .heart img{height: 24px;margin-right: 10px;}
+.top-area .top-area-content .actions a{color: #fff!important;background-color: #262626;height: 41px;line-height: 41px;padding: 0 20px;display: inline-block;}
+
+/*   HEADER   */
+
+header{padding-top: 20px;}
+header .main-menu .nav-link{font-weight: 500;color: #262626!important;padding: 0 3px;font-size: 16px;}
+header .main-menu .nav-link span{background-color: yellow;color: black;font-size: 12px;display: inline-block;height: 20px;width: 30px;text-align: center;font-weight: bold;position: relative;top: -5px;}
+header .main-menu .menu-link{background-color: #dfe1e3;color: black;font-size: 14px;font-weight: 600;display: inline-block;padding: 0 5px;}
+
+/*  BANNER   */
+
+.banner{margin-top: 22px;}
+.banner .banner-details h2{color: #262626;font-weight: 700;font-size: 50px;text-align: center;}
+.banner .banner-details p{color: #262626;font-size: 16px;text-align: center;margin-top: 20px;}
+.banner .banner-details .actions a{color: #fff!important;background-color: #262626;height: 49px;line-height: 49px;padding: 0 20px;display: inline-block;font-size: 16px;font-weight: 600;margin-top: 10px;}
+.banner .banner-details .picture-stars img{height: 18px;margin-top: 40px;}
+.banner .banner-details  h4{font-size: 16px;margin-top: 10px;}
+.banner .banner-details h4 span{border-right: 1px solid black;}
+
+/*  CLAIM OFFER  */
+
+.claim-offer-text{background-color: #fdf888;display: flex;justify-content: center;align-items: center;padding: 20px 0;}
+.claim-offer-text h4{font-size: 20px;font-weight: 600;}
+.claim-offer-text .actions a{color: #fff!important;background-color: #262626;margin-left:30px;border: 1px solid #262626;color: #fff;height: 45px;line-height: 45px;display: inline-block;padding: 0 20px;}
+
+/*  LETTERBOX FLOWERS  */
+
+.letterbox-flowers{padding: 80px 0;}
+.letterbox-flowers .tophead h2{color: #262626;font-weight:700;font-size: 40px;}
+.letterbox-flowers .picture img{width: 100%;}
+.letterbox-flowers .details p{padding: 15px 60px;color: #262626;}
+
+/*   REMEMBER   */
+
+.remember .remember-wrapper .remember-box{background-color: #447964;padding: 30px 80px;text-align: center;margin-top: 100px;}
+.remember .remember-wrapper .remember-box h2{font-size: 44px;font-weight: 700;color: #fff;text-align: center;}
+.remember .remember-wrapper .remember-box p{color: #fff;margin-top: 20px;}
+.remember .remember-wrapper .actions a{color: #262626!important; background-color: #fdf888; margin-top:15px;border: 1px solid #fdf888;font-weight: 600;font-size: 18px;height: 49px;line-height: 49px;padding: 0 25px;display: inline-block;}
+
+/*   REMEMBER   */
+
+/*   BEST SELLER  */
+
+.best-seller{padding: 100px 0;}
+.best-seller .tophead h2{font-size: 48px;font-weight: 700;color: #262626;text-align: center;margin-bottom: 150px;}
+.best-seller-wrapper{background-color: #f9ecd7;}
+.best-seller .best-seller-wrapper .images-grid-area img{margin-top: -80px;}
+.best-seller .best-seller-wrapper .title h4{font-size: 24px;font-weight: 700;text-align: center;}
+.best-seller .best-seller-wrapper .details span{margin-right: 24px;color: #262626;font-weight: 600;}
+.best-seller .best-seller-wrapper .details .actions a{background-color:#262626;color: #fff;font-size: 15px;font-weight: 600;display: in;}
+
+
+
+
