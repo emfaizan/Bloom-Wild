@@ -35,11 +35,11 @@
                     <div class="picture">
                         <img src="assets/images/login.svg" alt="">
                     </div>
-                    <div class="register">
+                    <div class="register d-lg-block d-none">
                         <a href="/">Log in / Register</a>
                     </div>
                 </div>
-                <div class="ship-country d-flex  ml-4">
+                <div class="ship-country d-lg-flex d-none ml-4">
                     <h4>Ship to:</h4>
                     <img src="assets/images/country.svg" alt="">
                 </div>
@@ -65,7 +65,7 @@
 
     <!---HEADER--->
     
-    <header>
+    <header class="d-md-block d-none">
          <div class="container">
              <nav class="main-menu">
                <ul class="nav items-list d-flex justify-content-between">
@@ -74,11 +74,10 @@
                   <li><a href="/" class="nav-link">Hand-tied Bouquets  </a></li>
                   <li><a href="/" class="nav-link">Monthly flowers  </a></li>
                   <li><a href="/" class="nav-link">Plants & home  </a></li>
-                  <li><a href="/" class="nav-link">Hand-tied Bouquets  </a></li>
                   <li><a href="/" class="nav-link">Occasions  </a></li>
-                  <li><a href="/" class="nav-link">Business  </a></li>
-                  <li><a href="/" class="nav-link">All</a></li>
-                  <a href="/" class="menu-link">Get help fast</a>
+                  <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
+                  <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
+                  <a href="/" class="menu-link d-lg-block d-none">Get help fast</a>
                </ul>
              </nav>
          </div>
@@ -93,7 +92,7 @@
         <div class="container">
             <div class="banner-wrapper">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-md-8">
                          <div class="banner-slider">
                             <div class="picture">
                                  <img src="assets/images/banner.webp" alt="">
@@ -109,20 +108,27 @@
                            </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 d-flex align-items-center">
+                    <div class="col-md-4 d-flex align-items-center">
                          <div class="banner-details text-center">
                              <h2>365 days of <br> care</h2>
-                             <p>From reminding exhausted parents they’re smashing it. To celebrating promotions and making it out of bed in the morning. Your care knows no bounds.</p>
+                             <p class="d-md-block d-none">From reminding exhausted parents they’re smashing it. To celebrating promotions and making it out of bed in the morning. Your care knows no bounds.</p>
                             <div class="actions">
                                 <a href="/">Shop now</a>
                             </div>
-                            <div class="picture-stars">
+                            <p class="d-md-none d-block">From reminding exhausted parents they’re smashing it. To celebrating promotions and making it out of bed in the morning. Your care knows no bounds.</p>
+                            <div class="picture-stars d-lg-block d-none">
                                 <img src="assets/images/stars.png" alt="">
                             </div>
-                            <h4><b> 4.86 </b><span>average </span> <b class="ml-2"> 40,988 </b>reviews</h4>
+                            <h4 class="d-lg-block d-none"><b> 4.86 </b><span>average </span> <b class="ml-2"> 40,988 </b>reviews</h4>
                         </div>
                     </div>
                 </div>
+                <section class="banner-details d-lg-none b-block text-center">
+                    <div class="picture-stars">
+                        <img src="assets/images/stars.png" alt="">
+                    </div>
+                    <h4><b> 4.86 </b><span>average </span> <b class="ml-2"> 40,988 </b>reviews</h4>
+                </section>
             </div>
         </div>
     </section>
@@ -149,7 +155,7 @@
        <div class="container">
            <div class="claim-offer-text">
               <div class="content">
-                  <h4> <b> Seen our TV advert?</b> Get £10 off your first order.</h4>
+                  <h4> <b> Seen our TV advert?</b> <br> Get £10 off your first order.</h4>
               </div>
               <div class="actions">
                   <a href="/">Claim offer</a>
@@ -169,7 +175,7 @@
                     <h2>How do letterbox flowers work</h2>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="picture mt-4">
                             <img src="assets/images/grid-1.webp" alt="">
                         </div>
@@ -177,7 +183,7 @@
                             <p>We pack every order like it's our own - with all the care in the world.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="picture">
                             <img src="assets/images/grid-2.webp" alt="">
                         </div>
@@ -185,8 +191,8 @@
                             <p>We pop our boxes in the post and they’re sent through the letterbox.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-4">
-                        <div class="picture">
+                    <div class="col-sm-4">
+                        <div class="picture mt-4">
                             <img src="assets/images/grid-3.webp" alt="">
                         </div>
                         <div class="details">
@@ -206,7 +212,7 @@
        <div class="container">
            <div class="remember-wrapper">
                <div class="row justify-content-center">
-                   <div class="col-lg-5">
+                   <div class="col-lg-5 col-md-6">
                        <div class="remember-box">
                            <div class="details">
                                <h2>Remember <br> what’s <br> important</h2>
@@ -218,9 +224,9 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-lg-5">
+                   <div class="col-lg-5 col-md-6 mt-lg-0 mt-5">
                        <div class="piture">
-                           <img src="assets/images/remember.jpg" alt="">
+                           <img src="assets/images/remember.jpg" class="w-100" alt="">
                        </div>
                    </div>
                </div>
@@ -240,15 +246,15 @@
         </div>
         <div class="best-seller-wrapper">
             <div class="container">
-                <div class="images-grid-area">
+                <div class="images-grid-area text-center">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-md-3 col-sm-6">
                             <div class="images-box">
                                 <div class="picture">
                                     <img src="assets/images/best-seller-1.webp" alt="">
                                 </div>
                                 <div class="title">
-                                   <h4> The Anna</h4>
+                                   <h4> The Tesa</h4>
                                 </div>
                                 <div class="details d-flex align-items-center">
                                     <span>£23</span>
@@ -258,13 +264,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3 col-sm-6 mt-sm-0 mt-5">
                             <div class="images-box">
                                 <div class="picture">
                                     <img src="assets/images/best-seller-2.webp" alt="">
                                 </div>
                                 <div class="title">
-                                   <h4>The Seasonal Tulips</h4>
+                                   <h4>The Ori</h4>
                                 </div>
                                 <div class="details d-flex align-items-center">
                                     <span>£32</span>
@@ -274,13 +280,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3 col-sm-6 mt-md-0 mt-5">
                             <div class="images-box">
                                 <div class="picture">
                                     <img src="assets/images/best-seller-3.webp" alt="">
                                 </div>
                                 <div class="title">
-                                   <h4>The Race</h4> 
+                                   <h4>The Rae</h4> 
                                 </div>
                                 <div class="details d-flex align-items-center">
                                     <span>£55</span>
@@ -290,13 +296,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3 col-sm-6 mt-md-0 mt-5">
                             <div class="images-box">
                                 <div class="picture">
                                     <img src="assets/images/best-seller-4.webp" alt="">
                                 </div>
                                 <div class="title">
-                                    <h4> The Tayari Hand-Tied </h4>
+                                    <h4> The Rae</h4>
                                  </div>
                                 <div class="details d-flex align-items-center">
                                     <span>£40</span>
@@ -308,13 +314,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="online-florists">
+                <div class="online-florists d-md-block d-none">
                     <div class="tophead d-flex justify-content-between align-items-center">
                        <h3>We're the UK's most-loved online florist*</h3>
                        <img src="assets/images/florist.svg" alt="">
                     </div>
                     <div class="row mt-4">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="florist-box">
                                 <div class="review-stars d-flex">
                                     <div class="star">
@@ -339,7 +345,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="florist-box">
                                 <div class="review-stars d-flex">
                                     <div class="star">
@@ -364,7 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-6 mt-lg-0 mt-5 d-lg-block d-none">
                             <div class="florist-box">
                                 <div class="review-stars d-flex">
                                     <div class="star">
@@ -398,17 +404,103 @@
             </div>
             <div class="happiness-image">
                 <div class="picture">
-                    <img src="assets/images/happines.svg" alt="">
+                    <img src="assets/images/happines.svg" class="d-md-block d-none" alt="">
+                    <img src="assets/images/happiness-sm.svg" class="d-md-none d-block" alt="">
                 </div>
                 <div class="material">
                    <p>We treat every order like it's our own. So if something isn't 100% perfect, our Customer Delight team will always go the extra mile to make it right.</p>
                    <p> <a href="/"> Click here </a>to get in touch with them.</p>
+                 
+                </div>
+                <div class="container">
+                    <div class="online-florists mt-5 d-md-none d-block">
+                        <div class="picture-stars text-center ">
+                            <img src="assets/images/stars.png" alt="">
+                        </div>
+                        <h4 class="text-center"><b> 4.86 </b><span>average </span> <b class="ml-2"> 40,988 </b>reviews</h4>
+                        <div class="tophead mt-3 d-flex justify-content-between align-items-center">
+                           <h3>We're the UK's most-loved online florist*</h3>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="florist-box">
+                                    <div class="review-stars d-flex">
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Just WOW. I was given the The Fisayo letterbox bouquet on the 19th March and it still looks beautiful on the 4th April...</p>
+                                        <p>  <b>Amanda,  </b>Moments ago </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
+                                <div class="florist-box">
+                                    <div class="review-stars d-flex">
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Just WOW. I was given the The Fisayo letterbox bouquet on the 19th March and it still looks beautiful on the 4th April...</p>
+                                        <p>  <b>Amanda,  </b>Moments ago </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                        <div class="review">
+                            <p>*Based on all UK online florists rated on Trustpilot or Reviews.co.uk</p>
+                        </div>
+                      
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <!---BEST SELLER--->
+
+    <!--FLOWERS IN SECOND--->
+
+    <section class="flowers-in-second text-center d-md-none d-block">
+        <div class="container">
+            <div class="flowers-wrapper">
+                <h2>Flowers in seconds</h2>
+                <p>Because with our award-winning App, it really is that easy. And with real-time tracking.</p>
+                 <p> <b> Plus 10% off your first order</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!--FLOWERS IN SECOND--->
 
     <!---ABOUT US--->
 
@@ -419,7 +511,7 @@
                 <h4><a href="/">Visit our blog <img src="assets/images/arrow.svg" alt=""> </a></h4>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="about-us-box">
                         <div class="picture mt-3">
                             <img src="assets/images/about-us.webp" alt="">
@@ -433,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="about-us-box">
                         <div class="picture">
                             <img src="assets/images/about-us-2.webp" alt="">
@@ -447,7 +539,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4 ">
                     <div class="about-us-box">
                         <div class="picture mt-3">
                             <img src="assets/images/about-us-3.webp" alt="">
@@ -469,27 +561,27 @@
 
     <!---ABOUT IMAGE--->
 
-    <section class="about-image">
+    <section class="about-image d-md-block d-none">
         <div class="container">
             <div class="row mt-5  d-flex justify-content-center">
                 <div class="col-lg-10">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="picture">
                                 <img src="assets/images/about-img-1.webp" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="picture">
                                 <img src="assets/images/about-img-2.webp" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="picture">
                                 <img src="assets/images/about-img-3.webp" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-md-3">
                             <div class="picture">
                                 <img src="assets/images/about-img-4.webp" alt="">
                             </div>
@@ -507,7 +599,7 @@
     <section class="about-us-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="about-content-box">
                         <h4>About Bloom & Wild flowers</h4>
                         <p>Hi, we’re Bloom & Wild. We don’t just send flowers. We help you care wildly. </p>
@@ -518,54 +610,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 mt-md-0 mt-4">
                     <div class="about-content-box">
                         <h4>More about our flower delivery service</h4>
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-6 ">
                                 <div class="list-items">
                                     <ul>
                                         <li><a href="/">Flowers online</a></li>
                                         <li><a href="/">Flowers by post</a></li>
                                         <li><a href="/">Flower delivery UK</a></li>
-                                        <li><a href="/">Flower subscriptions</a></li>
-                                        <li><a href="/">Next day flower delivery</a></li>
-                                        <li><a href="/">Ireland flower delivery</a></li>
-                                        <li><a href="/">Flower delivery France</a></li>
-                                        <li><a href="/">Flower delivery Germany</a></li>
-                                        <li><a href="/">Flower delivery Austria</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Flower subscriptions</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Next day flower delivery</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Ireland flower delivery</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Flower delivery France</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Flower delivery Germany</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Flower delivery Austria</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="list-items">
                                     <ul>
                                         <li><a href="/">Fresh flowers</a></li>
                                         <li><a href="/">Send roses</a></li>
-                                        <li><a href="/">Lily bouquet</a></li>
-                                        <li><a href="/">Peonies</a></li>
-                                        <li><a href="/">Freesias by post</a></li>
-                                        <li><a href="/">Tulip bouquets</a></li>
-                                        <li><a href="/">Yellow flowers</a></li>
-                                        <li><a href="/">Grandparents flowers & gifts</a></li>
-                                        <li><a href="/">Sainsburys Flowers</a></li>
-                                        <li><a href="/">How to arrange flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Lily bouquet</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Peonies</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Freesias by post</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Tulip bouquets</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none"> class="d-lg-inline-block d-none">Yellow flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Grandparents flowers & gifts</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Sainsburys Flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">How to arrange flowers</a></li>
 
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 d-lg-block d-none">
                                 <div class="list-items">
                                     <ul>
                                         <li><a href="/">Flowers for occasions</a></li>
                                         <li><a href="/">Birthday flowers</a></li>
-                                        <li><a href="/">Valentine's Day flowers</a></li>
-                                        <li><a href="/">Mother's Day flowers</a></li>
-                                        <li><a href="/">Sympathy flowers</a></li>
-                                        <li><a href="/">Thank you flowers</a></li>
-                                        <li><a href="/">Anniversary flowers</a></li>
-                                        <li><a href="/">NHS 25% Discount</a></li>
-                                        <li><a href="/">Sunday flower delivery</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Valentine's Day flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Mother's Day flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Sympathy flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Thank you flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Anniversary flowers</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">NHS 25% Discount</a></li>
+                                        <li><a href="/" class="d-lg-inline-block d-none">Sunday flower delivery</a></li>
 
                                     </ul>
                                 </div>
@@ -585,14 +677,15 @@
         <div class="container">
             <div class="footer-wrapper">
                 <div class="row">
-                    <div class="col-lg-2">
-                       <div class="logo">
+                    <div class="col-lg-2 col-md-6">
+                       <div class="logo text-lg-left text-center">
                            <img src="assets/images/footer-logo.svg" alt="">
                        </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-6">
                        <div class="contact">
                            <h5>Email us <b> here</b></h5>
+                           <div class="flex-area d-flex flex-lg-column flex-row align-items-lg-start align-items-center">
                            <div class="social-icons">
                                <i class="fa fa-instagram"></i>
                                <i class="fa fa-facebook"></i>
@@ -601,9 +694,10 @@
                            <div class="picture">
                                <img src="assets/images/google-store.svg" alt="">
                            </div>
+                        </div>
                        </div>  
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
                        <div class="footer-box">
                            <h4>About us</h4>
                            <ul>
@@ -618,7 +712,7 @@
                            </ul>
                        </div> 
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
                         <div class="footer-box">
                             <h4>Our flowers</h4>
                             <ul>
@@ -631,7 +725,7 @@
                         </div> 
                     </div>
                    
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
                         <div class="footer-box">
                             <h4>Need help?</h4>
                             <ul>
@@ -642,7 +736,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
                         <div class="footer-box">
                             <h4>International sites</h4>
                             <ul>
