@@ -216,7 +216,116 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 15px;display: inl
 .your-details ::placeholder{color: #262626;font-weight: 600;padding: 0 4px;}
 .your-details .your-details-row .guest-feilds a{color: #262626!important;background-color: #fff;border:2px solid #262626;display: inline-block;width: 300px;height: 62px;line-height: 62px;font-weight: 500;text-align: center;}
 
+/*    DETAILS PAGE   */
+
+.details-page{background-color: #f5f5f5;}
+
+/*   SEND FLOWERS  */
+
+.send-flowers{padding: 25px 0;}
+.send-flowers .send-flowers-content a{display: inline-block;color: #262626;font-size: 17px;}
+.send-flowers .send-flowers-content h4{color: #262626;font-size: 17px;margin: 0;}
+
+/*   PRODUCT DETAILS  */
+
+.product-details{background-color: #fff;padding-bottom: 40px;}
+.product-details .the-ori-tophead{border-bottom: 1px solid #dfe1e3;padding: 15px;}
+.product-details .the-ori-tophead h3{color: #262626;font-weight: 700;font-size: 27px;margin: 0;}
+.product-details .the-ori-tophead span{color: grey;font-size: 15px;}
+.product-details .the-ori-tophead .heart img{width: 30px;margin-right: 20px;}
+.product-details .the-ori-tophead .actions a{font-weight: 500;background: #262626; color: #fff;border: 2px solid #262626;display: inline-block;padding: 9px 30px;font-size: 16px;font-weight: 500;}
+.product-details .details-grid-row .picture{background-color: #f9ecd7;padding: 15px;margin:0 15px;}
+.product-details .details-grid-row .picture img{width: 100%;}
+.product-details .details-grid-row .details-grid-box{padding:0 7px;}
+.product-details .details-grid-row .details-grid-box h3{font-size: 25px;color: #262626;font-weight: 700;}
+.product-details .details-grid-row .details-grid-box p{color: #262626;font-size: 18px;}
+.product-details .details-grid-row .details-grid-box h4{font-size: 18px;font-weight: 700;padding-top: 15px;}
+.product-details .details-grid-row .summery-items{background-color: #f9ecd7;display: flex;align-items: center;height: 100%;}
+.product-details .details-grid-row .summery-items img{width: 68px;}
+.product-details .details-grid-row .summery-items p{font-size: 15px;padding: 8px 15px;}
+.product-details .details-grid-row .ori-reviews {background-color: #f5f5f5;padding:12px 0;}
+.product-details .details-grid-row .ori-reviews {background-color: #f5f5f5;padding-left:15px;}
+.product-details .details-grid-row .ori-reviews .reviews-box{background-color: #fff;padding: 20px;min-width: 300px;margin-right: 20px;}
+.product-details .details-grid-row .ori-reviews h3{font-size: 25px;color: #262626;font-weight: 700;}
+.product-details .details-grid-row .ori-reviews p{color: #262626;font-size: 17px;}
+.product-details .details-grid-row .ori-reviews .ori-reviews-grid{overflow-x: scroll;}
+.product-details .details-grid-row .happiness-guaranted img{width: 300px;margin: auto;display: block;}
+.product-details .details-grid-row .happiness-guaranted p{color: #262626;font-size: 17px;text-align: center;padding: 0 14px;}
+
+/*  LOG IN   */
+
+.login-form{width: 30%;background-color: #fff;position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.login-form .login-content .title h3{color: #262626;font-size: 26px;font-weight: 700;}
+.login-form .login-content .title .cancel img{width: 24px;}
+.login-form .login-content .title .cancel{cursor: pointer;}
+.login-form .login-content .form-group .form-control{border-radius: 0px;height: 60px;border: 1px solid #cdcfd1;}
+.login-form .login-content ::placeholder{color: #262626;font-weight: 700;}
+.login-form .login-content .form-group{position: relative;}
+.login-form .login-content .form-group .eye{position: absolute;top: 50%;right: 10px;text-align:center;transform: translateY(-50%);height: 24px;width: 24px;background-color: #dfe1e3;border-radius: 50%;}
+.login-form .login-content .forgot a{color: #262626;font-size: 16px;font-weight: 600;text-decoration: underline;}
+.login-form .login-content .login a{margin-top:17px;color: #fff!important;background-color: #447964;border: 1px solid #447964;height: 45px;line-height: 45px;color: #fff;font-weight: 600;display:block;text-align: center;}
+.login-form .login-content .login-facebook a{margin-top:10px;color: #fff!important;background-color: #485b94;;border: 1px solid #485b94;;height: 45px;line-height: 45px;color: #fff;font-weight: 600;display:block;text-align: center;}
+.login-form .login-content .customer p {color: #262626;}
+.login-form .login-content .customer p a{color: #262626;}
+
+/*   SECURE CHECKOUT  */
+
+.secure-checkout{padding: 14px 0;}
+.secure-checkout .continue-shopping .heading a h4{display: inline-block;color: #262626;font-size: 16px;margin-left: 3px;}
+.secure-checkout .continue-shopping .secure-checkout-text h3{color: #262626;font-weight: 700;font-size: 26px;margin: 0;}
+.secure-checkout .continue-shopping .secure-checkout-text p{color: grey;font-size: 15px;}
+
+/*  CHECKOUT MAIN  */
+
+.checkout-main{border-top: 1px solid #dfe1e3;}
+.checkout-main .checkout-main-categories .basket-summary{background-color: #f9f9f9;padding: 20px 50px;}
+.checkout-main .checkout-main-categories .details h4{color: #262626;font-size: 20px;font-weight: 700;text-align: center;}
+.checkout-main .checkout-main-categories .details input{border: 1px solid #cdcfd1;width: 100%;height: 100%;}
+.checkout-main .checkout-main-categories .details .form-group{position: relative;width: 380px;height: 60px;margin: auto;}
+.checkout-main .checkout-main-categories .details .absolute{position: absolute;top: 11px;right: 20px;display: inline-block;color: #000!important;background-color: #fff;border: 2px solid#000;height: 45px;padding: 0px 20px;line-height: 45px;}
+.checkout-main .checkout-main-categories .details input::placeholder{color: #262626;font-weight: 700;text-indent: 15px;}
+.checkout-main .checkout-main-categories .details .meta{color: #262626;font-size: 13px;text-align: center;padding-top: 6px;}
+.checkout-main .checkout-main-categories .details .order-details{display: flex;background-color: #fff;border: 1px solid #dfe1e3;}
+.checkout-main .checkout-main-categories .details .order-details .heading{display: flex;justify-content: space-between;}
+.checkout-main .details .order-details .heading h4{text-align: left;margin: 0;}
+.checkout-main .details .order-details img{width: 200px;}
+.checkout-main .details .order-details .heading{padding: 0px 17px;}
+.checkout-main .details .order-details .heading h5{font-size: 16px;font-weight: bold;margin: 0;}
+.checkout-main .details .order-details .details{padding: 0px 17px;}
+.checkout-main .details .order-details .details p i{font-size: 14px;}
+.checkout-main .details .order-details .details h6{font-size: 17px;font-weight: 500;color: #262626;margin: 0;}
+.checkout-main .details .order-details .details p{color: #262626;}
+.checkout-main .details .order-details .order-content{padding: 15px 0;}
+.checkout-main .details .order-details .details .choose{color: #212529;background-color: #dfe1e3;border-radius: 20px;text-align: center;font-weight: 600;font-size: 14px;}
+.checkout-main .details .order-details .details .flex-area span{display: inline-block;color: #262626;font-weight: 600;border-bottom: 2px solid #262626;}
+.checkout-main .checkout-main-categories .details .delivery p{color: grey;}
+.checkout-main .checkout-main-categories .details .delivery p b{color: #262626;font-size: 20px;display: inline-block;padding: 0 5px;}
+.checkout-main .checkout-main-categories .details .delivery .actions a{display: inline-block;color: #262626!important;background-color: #fff;border: 2px solid #262626;font-weight: 600;font-size: 15px;padding: 15px 33px;}
+.checkout-main .checkout-main-categories .payment-options{padding: 20px 50px;}
+.checkout-main .checkout-main-categories .payment-options .card .heading{display: flex;justify-content: space-between;}
+.checkout-main .checkout-main-categories .payment-options .card .heading img{width: 140px;}
+.checkout-main .checkout-main-categories .payment-options .form-group{width: 380px;}
+.checkout-main .checkout-main-categories .payment-options .card{width: 380px;margin: auto;border-radius: 0px;background-color: #dae4e0;padding: 10px 8px;}
+.checkout-main .checkout-main-categories .payment-options .form-group .fa{position: absolute; top: 25px;right: 10px; color: grey;}
+.checkout-main .checkout-main-categories .payment-options .form-group img{position: absolute; top: 25px;right: 10px; color: grey;}
+.checkout-main .checkout-main-categories .payment-options .form-group-add input::placeholder{color: black;font-weight: 300;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery .button-1 a{color: #fff!important; background-color: #262626;border: 1px solid #262626;display: block;font-weight: 600;padding: 15px 0;text-align: center;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery .button a{margin-top:20px;text-align:center;padding:15px 0;display: block;color: #262626!important;background-color: #fff;border: 2px solid #262626;font-weight: 600;font-size: 15px;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery{padding: 0 80px;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery h5{color: #262626;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery h4{font-weight: 300;color: #262626;}
+.checkout-main .checkout-main-categories .payment-options .payment-delivery h4 b{font-weight: 600;}
+
+
+
+
 /*  MEDIA QUERY   */
+
+
+@media (max-width:1200px){
+    .checkout-main .container{max-width: 525px;width: 100%;}
+    .checkout-main .checkout-main-categories .details .form-group{width: auto;}
+}
 
 @media (max-width:992px){
     header .main-menu .nav-link {font-size: 13px;}
@@ -263,7 +372,18 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 15px;display: inl
     .product-collections .product-box .details .reviews span {font-size: 14px;}
     .online-florists .tophead h3 { font-size: 22px;}
     .online-florists .row .florist-box .text p {font-size: 15px;}
-   
+    .send-flowers .send-flowers-content a {font-size: 15px;}
+    .send-flowers .send-flowers-content h4 {font-size: 15px;}
+    .product-details .the-ori-tophead .actions a {font-size: 14px;}
+    .product-details .details-grid-row .picture { background-color:transparent; padding: 0px;margin: 0;}
+    .product-details .the-ori-tophead h3 { font-size: 25px;}
+    .product-details .details-grid-row .details-grid-box h3 {font-size: 22px;padding-top: 30px;}
+    .product-details .details-grid-row .details-grid-box p {font-size: 15px;margin:0;}
+    .product-details .details-grid-row .ori-reviews { margin: 0 12px;}
+    .product-details .details-grid-row .ori-reviews h3 {font-size: 22px;}
+    .product-details .details-grid-row .ori-reviews p {font-size: 15px;}
+    .product-details .details-grid-row .happiness-guaranted p {font-size: 15px;width: 70%;padding: 0;margin: auto;}
+    .product-details {padding-bottom: 60px;}
 
 }
 
@@ -299,7 +419,24 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 15px;display: inl
     footer .footer-wrapper .contact {text-align: center;margin-top: 30px;}
     footer .footer-wrapper .contact .flex-area {justify-content: center;}
     .online-florists .tophead p { font-size: 14px;}
-
+    .send-flowers {padding: 20px 0;}
+    .product-details .the-ori-tophead {padding: 25px 15px;}
+    .product-details .details-grid-row .actions a{margin:8px;text-align:center;display: block;font-weight: 500;background: #262626; color: #fff;border: 2px solid #262626;padding: 9px 30px;font-size: 16px;font-weight: 500;}
+    .product-details .details-grid-row .details-grid-box h3 {font-size: 20px;}
+    .product-details .details-grid-row .details-grid-box p {font-size: 14px;padding-right: 30px;}
+    .product-details .details-grid-row .details-grid-box h4 {font-size: 16px;}
+    .product-details .details-grid-row .summery-items p{font-size: 13px;padding-right: 30px;}
+    .checkout-main .details .order-details img {width: 70px;border-radius: 50%;margin-left: 20px;}
+    .checkout-main .details .order-details{flex-direction: column;}
+    .secure-checkout .continue-shopping .secure-checkout-text h3 { font-size: 22px;}
+    .checkout-main .checkout-main-categories .details input::placeholder{font-size: 13px;}
+    .checkout-main .checkout-main-categories .details .absolute {background-color: #000;color: #fff !important;}
+    .checkout-main .details .order-details .heading h4 {font-size: 17px;}
+    .checkout-main .details .order-details .details p {font-size: 14px;}
+    .checkout-main .details .order-details .details h6 { font-size: 14px;}
+    .checkout-main .details .order-details .details .flex-area span {font-size: 14px;}
+    .checkout-main .checkout-main-categories .details .delivery .button-style a{background-color: #000;color: #fff !important;width:293px;display: inline-block;margin-bottom: 20px;}
+    
 }
 
 
@@ -317,6 +454,24 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 15px;display: inl
     .your-details ::placeholder{font-size: 14px;}
     .your-details .your-details-row .guest-feilds a {font-size: 14px;}
     .order-form .order-form-box .description h3 a {font-size: 14px;}
+    .product-details .the-ori-tophead h3 {font-size: 20px;}
+    .product-details .details-grid-row .happiness-guaranted img {width: 235px;}
+    .checkout-main .checkout-main-categories .basket-summary{padding:20px 0;}
+    .checkout-main .checkout-main-categories .payment-options .payment-deliver a{width: 293px;}
+    .checkout-main .checkout-main-categories .payment-options .payment-delivery {padding: 0 40px;}
+    .checkout-main .checkout-main-categories .payment-options .card {width: auto;}
+    .checkout-main .checkout-main-categories .payment-options {padding: 20px 10px;}
+    .checkout-main .checkout-main-categories .details .delivery .actions a {  padding: 10px 33px;}
+    .checkout-main .checkout-main-categories .payment-options .payment-delivery .button-1 a {padding: 10px 0;}
+    .checkout-main .checkout-main-categories .payment-options .payment-delivery .button a {padding: 10px 0;}
 
+}
+
+
+@media (max-width:420px){
+    .checkout-main .checkout-main-categories .payment-options .payment-delivery{padding: 0;}
+    .checkout-main .checkout-main-categories .details .delivery .button-style a {display: block;width: auto;}
+    .checkout-main .checkout-main-categories .details .delivery .actions a {display: block;}
+    .checkout-main .checkout-main-categories .payment-options .payment-delivery .button-1 a {padding: 10px 0;}
 
 }
