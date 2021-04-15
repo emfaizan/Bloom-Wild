@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 
+     <!-- FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+    <!-- FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -33,24 +38,24 @@
                 <div class="picture">
                     <img src="assets/images/checkout-order.webp" alt="">
                 </div>
-                <div class="order-progress mx-5">
+                <div class="order-progress mx-sm-5 mx-0">
                     <h4>The Anna</h4>
                     <div class="steps d-flex">
                         <div class="flex-area d-flex align-items-center">
                          <div class="line"></div>   
-                        <h4>1</h4>
+                        <span>1</span>
                     </div>
                     <div class="flex-area d-flex align-items-center">
                         <div class="line"></div>   
-                       <h4>2</h4>
+                        <span>2</span>
                    </div>
                    <div class="flex-area d-flex align-items-center">
                       <div class="line"></div>   
-                      <h4>3</h4>
+                      <span>3</span>
                    </div>
                    <div class="flex-area d-flex align-items-center">
                        <div class="line"></div>   
-                       <h4>4</h4>
+                       <span>4</span>
                    </div>
                     </div>
                 </div>
@@ -68,7 +73,7 @@
     <section class="order-form">
         <div class="container">
             <div class="order-tophead text-center">
-                <h2>Add a little something <img src="assets/images/order-tick.svg" alt=""></h2>
+                <h2>Add a little something <img src="assets/images/order-tick.svg" class="pl-3" alt=""></h2>
                 <p>There's still space in the box for one extra treat</p>
             </div>
             <div class="order-form-categories">
@@ -79,7 +84,7 @@
                                <img src="assets/images/order-form-1.webp" alt="">
                                <div class="layer">
                                    <div class="actions">
-                                       <a href="/">More info</a>
+                                       <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                        <a href="/">Add</a>
                                    </div>
                                </div>
@@ -96,7 +101,7 @@
                                <img src="assets/images/order-form-2.webp" alt="">
                                <div class="layer">
                                 <div class="actions">
-                                    <a href="/">More info</a>
+                                    <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                     <a href="/">Add</a>
                                 </div>
                               </div>
@@ -113,7 +118,7 @@
                                <img src="assets/images/order-form-3.webp" alt="">
                                <div class="layer">
                                 <div class="actions">
-                                    <a href="/">More info</a>
+                                    <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                     <a href="/">Add</a>
                                 </div>
                                </div>
@@ -130,7 +135,7 @@
                                <img src="assets/images/order-form-4.webp" alt="">
                                <div class="layer">
                                 <div class="actions">
-                                    <a href="/">More info</a>
+                                    <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                     <a href="/">Add</a>
                                 </div>
                               </div>
@@ -147,7 +152,7 @@
                                <img src="assets/images/order-form-5.webp" alt="">
                                <div class="layer">
                                 <div class="actions">
-                                    <a href="/">More info</a>
+                                    <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                     <a href="/">Add</a>
                                 </div>
                               </div>
@@ -164,7 +169,7 @@
                                <img src="assets/images/order-form-6.webp" alt="">
                                <div class="layer">
                                 <div class="actions">
-                                    <a href="/">More info</a>
+                                    <a href="javascript:void(0)" onclick="checkpopup()">More info</a>
                                     <a href="/">Add</a>
                                 </div>
                               </div>
@@ -186,6 +191,45 @@
         </div>
     </section>
 
+    <div class="checkout-popup" id="checkpopup">
+        <div class="back-overlay"></div>
+       <div class="checkout-popcon">
+           <div class="row">
+               <div class="col-lg-5">
+                  <div class="picture">
+                      <img src="assets/images/check-image.webp" alt="">
+                  </div>
+               </div>
+               <div class="col-lg-7">
+                <div class="content d-flex justify-content-between align-items-center">
+                    <div class="text">
+                        <h3>Milk Chocolate <br> Bar</h3>
+                    </div>
+                    <div class="actions d-flex justify-content-between align-items-center">
+                         <a href="/">Add £6</a>
+                         <img src="assets/images/form-cancel.svg"  onclick="checkpopup()" alt="">
+                    </div>
+                </div>
+                <div class="details">
+                    <h2>About </h2>
+                    <p> Made just for us by House of Dorchester, this milk chocolate bar makes a great extra gift for anyone who's made you smile. And it's completely delicious too.</p>
+                    <ul class="mt-5">
+                        <li>Contains <b> milk and soya </b>and made in kitchens that work with <b> nuts and sesame <br>  seeds</b></li>
+                        <li class="mt-4">As each batch is made freshly, exact decoration colour may vary</li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+       </div>
+    </div>
+
+    <script>
+    function checkpopup(){
+        document.getElementById("checkpopup").classList.toggle("active");
+    } 
+
+</script>
+
     <!--ORDER-FORM-SECTION--->
 
     <!---DELIVERY DETAILS--->
@@ -196,8 +240,19 @@
                 <h3>Delivery Details</h3>
                  <p> Already have an account? <a href="/"> Log in</a></p>
             </div>
-            <div class="input-address">
-                
+            <div class="input-address-content">
+                 <div class="form-group">
+                     <input type="text" name="" id="" placeholder="Recipient name" class="form-control">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Recipient address" class="form-control">
+                </div>
+            </div>
+            <div class="pre-order mt-4">
+                <div class="buttons-area d-flex justify-content-between">
+                    <button class="button-1"> <p class="d-flex"> <p> <span class="text-change">  Pre-order</span> <b>for delivery on <br> </b>Wednesday, 14 April</p> <p>  <img src="assets/images/arrow-c.svg" alt=""></p></button>
+                    <button class="button-1"> <p> <b> Sent With </b><br> <span class="text-gray"> Royal Mail Tracked</span></p> <p> <img src="assets/images/arrow-c.svg" width="16px" alt=""></p></button>
+                </div>
             </div>
         </div>
     </section>
