@@ -98,11 +98,11 @@ header{}
 
 .best-seller{padding: 100px 0 50px;background:#fff;position: relative;z-index: 1;}
 .best-seller:after{content:'';position:absolute;left:0;right:0;bottom:0;height: 50%;z-index: -1;background-color: #f9ecd7;display: block;}
-.best-seller .tophead h2{font-size: 48px;font-weight: 700;margin:0 0 25px; color: #262626;text-align: center;}
+.best-seller .tophead h2{font-size: 48px;font-weight: 900;margin:0 0 25px;color: #262626;font-family: 'Playfair Display';text-align: center;}
 
-.best-seller .best-seller-wrapper .images-grid-area img{width: 100%;}
+.best-seller .best-seller-wrapper .images-grid-area img{max-width: 100%;height:auto !important;}
 .best-seller .best-seller-wrapper .images-grid-area{position:relative;}
-.best-seller .best-seller-wrapper .title h4{margin-top:14px;font-size: 24px;font-weight: 700;text-align: center;}
+.best-seller .best-seller-wrapper .title h4{margin-top:14px;font-size: 24px;font-weight: 900;text-align: center;font-family: 'Playfair Display';}
 .best-seller .best-seller-wrapper .details span{margin-right: 24px;color: #262626;font-weight: 600;}
 .best-seller .best-seller-wrapper .details .actions a{background-color:#262626;color: #fff;font-size: 15px;font-weight: 600;display: inline-block;height: 45px;line-height: 45px;padding: 0 22px;}
 .best-seller .best-seller-wrapper .details{display: flex;justify-content: center;margin-top: 30px;}
@@ -118,7 +118,7 @@ header{}
 
 .happiness-guaranteed{/* margin-left: 70px; */background: #f9ecd7;}
 .happiness-guaranteed img{height: 217px;}
-.happiness-guaranteed p{width: 20%;text-align: center;position: relative;top: -80px;left: 70px;color: #262626;font-size: 14px;line-height: 1.8;font-weight: 300;}
+.happiness-guaranteed p{width: 100%;text-align: center;position: relative;left: 0;color: #262626;font-size: 14px;line-height: 1.8;font-weight: 300;}
 .happiness-guaranteed p a{color: #262626;font-weight: 600;text-decoration: underline;}
 
 /*   FLOWERS IN SECOND  */
@@ -135,7 +135,7 @@ header{}
 .about-us .tophead h4 a{color: #262626;font-size: 22px;font-weight: 600;text-decoration: none;}
 .about-us .tophead h4 a img{margin-left: 10px;}
 .about-us .tophead h4:hover{transform: translateX(30px);transition: 0.2s ease-in-out;}
-.about-us .about-us-box .picture img{width: 100%;}
+.about-us .about-us-box .picture img{width: 100%;max-width: 100%;height: auto !important;}
 .about-us .about-us-box .details{padding: 22px 30px;}
 .about-us .about-us-box .details h4{color: #262626;font-family: 'Playfair Display', serif;font-size: 24px;font-weight: 700;}
 .about-us .about-us-box .details p{color: #262626;font-size: 16px;padding-top: 14px;}
@@ -149,9 +149,9 @@ header{}
 /*   ABBOUT US CONTENT  */
 
 .about-us-content{padding: 80px 0;}
-.about-us-content .about-content-box h4{color: #262626;font-weight: 700;font-size: 24px;font-family: 'Playfair Display', serif;}
+.about-us-content .about-content-box h4{color: #262626;font-weight: 900;font-size: 24px;font-family: 'Playfair Display', serif;}
 .about-us-content .about-content-box .actions a{color: #262626;font-weight: 600;text-decoration: underline;}
-.about-us-content .about-content-box p{color: #262626; font-size: 13px;}
+.about-us-content .about-content-box{color: #262626; font-size: 13px;}
 .about-us-content .about-content-box .list-items a{color: #262626;font-size: 13px;margin-bottom: 8px;display: inline-block;}
 
 
@@ -572,10 +572,12 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .best-seller .best-seller-wrapper .happiness-guaranteed img {height: 174px;}
     .about-us .tophead h2 {font-size: 40px;}
     .letterbox-flowers .tophead h2 {font-size: 34px; }
-    .about-us .about-us-box .details h4 {font-size: 18px;}
+
+    .about-us .about-us-box .details {padding:15px 16px; }
+    .about-us .about-us-box .details h4 {font-size: 24px;font-weight: 900;}
     .about-us .about-us-box .details p {font-size: 14px;}
-    .about-us-content .about-content-box h4 {font-size: 17px;}
-    .about-us-content .about-content-box p {font-size: 12px;}
+    .about-us-content .about-content-box h4 {font-size: 18px;}
+    .about-us-content .about-content-box {font-size: 12px;}
 
     footer .footer-wrapper .contact img {width: 115px;}
     .order-header .order-header-content .order-progress h4 {font-size: 16px;}
@@ -619,7 +621,6 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .banner .banner-details .picture-stars img {height: 12px;}
     .claim-offer-text h4 {text-align: center;}
     .claim-offer-text h4 br{display: block;}
-    .letterbox-flowers .details p {padding: 15px 10px;font-size: 15px;}
     .remember .remember-wrapper .row{flex-direction: column-reverse;}
     .remember .remember-wrapper .remember-box {margin-top: 0px; }
     .best-seller .best-seller-wrapper .happiness-guaranteed img {margin: auto;height: 150px;}
@@ -628,21 +629,53 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .best-seller .best-seller-wrapper .online-florists h4{font-size: 14px;}
     .best-seller .best-seller-wrapper .online-florists h4 span{border-right: 1px solid black;}
     .best-seller .best-seller-wrapper .happiness-guaranteed {margin-left: 0px;}
-    .about-us{margin-top: 50px;}
+
+    .letterbox-flowers {padding: 30px 0;}
+    .letterbox-flowers .tophead h2 {font-size: 30px;}
+    .letterbox-flowers .details p {padding: 15px 10px;font-size: 15px;}
+    .letterbox-wrapper .row {overflow-x: scroll;scroll-snap-type: x proximity;flex-wrap: nowrap;}
+    .letterbox-wrapper .letterbox {width:234px; margin:0 10px;}
+    .letterbox-wrapper .letterbox img{max-width:100%;}
+
+    .about-us{margin-top: 50px;padding: 20px 0;}
     .about-us .tophead h2 {font-size: 30px;text-align: center;}
     .about-us .tophead h4{text-align: center;}
+
+    .about-us .about-us-box .picture img {width:100% !important;}
+    .about-us .about-us-box {margin-bottom:30px;}
+    .about-us .col-md-4:nth-child(1) .about-us-box {margin-right:64px;}
+    .about-us .col-md-4:nth-child(2) .about-us-box {margin-left:64px;}
+    .about-us .col-md-4:nth-child(3) {display:none;}
+
+    .about-us-content {padding: 20px 0;}
+
     .banner .banner-details h2 {font-size: 30px;}
     .banner .banner-details h2 br{display: none;}
     .banner .banner-details p {font-size: 14px;}
-    .letterbox-flowers .tophead h2 {font-size: 30px;}
+
+    .best-seller {padding: 35px 0;}
+    .best-seller:after {height:75%}
     .best-seller .tophead h2 {font-size: 30px;}
     .best-seller-wrapper {padding-bottom: 50px;}
-    .best-seller .best-seller-wrapper .title h4 {font-size: 20px;}
+    .best-seller .best-seller-wrapper .title h4 {font-size: 18px;margin: 12px;}
+    .best-seller .best-seller-wrapper .details {margin-top:15px;}
+    .best-seller .best-seller-wrapper .details .actions a {font-size:13px;height: 40px;line-height: 40px;}
     .best-seller .best-seller-wrapper .online-florists h3 { font-size: 22px;}
     .best-seller .best-seller-wrapper .online-florists img {height: 25px;}
 
-    footer .footer-wrapper .contact {text-align: center;margin-top: 30px;}
+    .happiness-guaranteed {padding:0 0 30px;margin: 0 0 30px;}
+    .happiness-guaranteed img {height:auto !important; margin:auto; }
+
+
+    /* FOOTER */
+    footer .footer-wrapper .contact {text-align: center;margin: 30px auto;}
     footer .footer-wrapper .contact .flex-area {justify-content: center;}
+
+    footer .footer-wrapper .footer-box h4 {border-top: 1px solid #000;border-bottom: 1px solid #000;margin: -1px 15px 0;padding: 24px 32px;}
+    footer .footer-wrapper .footer-box ul {margin: -1px 15px 0;padding: 24px 32px;}
+    footer .footer-wrapper .footer-box a {font-size:13px;}
+
+
     .online-florists .tophead p { font-size: 14px;}
     .send-flowers {padding: 20px 0;}
     .product-details .the-ori-tophead {padding: 25px 15px;}
