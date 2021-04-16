@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- FONTS -->
@@ -17,6 +21,8 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -24,7 +30,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 
@@ -37,6 +43,11 @@
 
                     <div class="top-left">
                         <div class="flex-area d-flex align-items-center">
+                            <div class="mobile-menu-trigger">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/burger.svg" alt="">
+                                </a>
+                            </div>
                             <div class="login d-flex align-items-center">
                                 <div class="picture">
                                     <img src="assets/images/login.svg" onclick="userpop()" alt="">
@@ -86,13 +97,13 @@
         </div>
         
 
-        <div class="header-menu d-md-block d-none">
+        <div class="header-menu">
             <div class="container">
                 <nav class="main-menu">
                     <ul class="nav items-list">
                         <li><a href="/" class="nav-link">Available soonest <span>new</span> </a></li>
                         <li class="has-megamenu">
-                            <a href="/" class="nav-link">Letterbox flowers </a>
+                            <a href="Javascript:void(0)" class="nav-link">Letterbox flowers </a>
                             
                             <div class="megamenu-wrap" style="position:absolute;">
                                 <div class="container">
@@ -178,20 +189,6 @@
        </div>
     </div>
     
-
-
-    <script>
-        function login(){
-            document.getElementById("login").classList.toggle("active");
-        } 
-        function userpop(){
-            document.getElementById("userpopup").classList.toggle("active");
-        } 
-        function create(){
-            document.getElementById("create-account").classList.toggle("active");
-        } 
-    </script>
-
    <div class="user-popup shadow-sm" id="userpopup">
        <div class="back-overlay"></div>
     <div class="user-content">
@@ -512,7 +509,7 @@
     <!-- ONLINE FLORISTS -->
     <section class="online-florists">
         <div class="container">
-            <div class="tophead d-flex justify-content-between align-items-center">
+            <div class="tophead d-flex justify-content-between align-items-center flex-column flex-md-row">
                 <h3>We're the UK's most-loved online florist*</h3>
                 <img src="assets/images/florist.svg" alt="">
             </div>
