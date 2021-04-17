@@ -315,27 +315,38 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 /*   PRODUCT DETAILS  */
 .product-details{background-color:#fff;padding-bottom:40px}
-.product-details .the-ori-tophead{border-bottom:1px solid #dfe1e3;padding:15px}
-.product-details .the-ori-tophead h3{color:#262626;font-weight:700;font-size:27px;margin:0;font-family:'Playfair Display',serif}
-.product-details .the-ori-tophead span{color:grey;font-size:15px}
-.product-details .the-ori-tophead .heart img{width:30px;margin-right:20px}
-.product-details .the-ori-tophead .actions a{font-weight:500;background:#262626;color:#fff;border:2px solid #262626;display:inline-block;padding:9px 30px;font-size:16px;font-weight:500}
-.product-details .details-grid-row .picture{background-color:#f9ecd7;padding:15px;margin-left:15px}
+.product-details .details-top {border-bottom:1px solid #dfe1e3;padding:15px}
+.product-details .details-top h1{color:#262626;font-weight:900;font-size:27px;margin:0;font-family:'Playfair Display',serif}
+.product-details .details-top span{color:grey;font-size: 14px;font-weight: 300;}
+.product-details .details-top .heart img{width:30px;margin-right:20px}
+.product-details .details-top .actions a{font-weight:500;background:#262626;color:#fff;border:2px solid #262626;display:inline-block;padding:9px 30px;font-size:16px;font-weight:500}
+.product-details .details-grid-row .picture{background-color:#f9ecd7;padding:15px;}
 .product-details .details-grid-row .picture img{width:100%}
-.product-details .details-grid-row .details-grid-box{padding:0 7px}
-.product-details .details-grid-row .details-grid-box h3{font-size:25px;color:#262626;font-weight:700;font-family:'Playfair Display',serif}
-.product-details .details-grid-row .details-grid-box p{color:#262626;font-size:16px}
-.product-details .details-grid-row .details-grid-box h4{font-size:18px;font-weight:700;padding-top:15px}
-.product-details .details-grid-row .summery-items{background-color:#f9ecd7;display:flex;align-items:center;height:100%}
-.product-details .details-grid-row .summery-items img{width:68px}
-.product-details .details-grid-row .summery-items p{font-size:15px;padding:8px 15px}
-.product-details .details-grid-row .ori-reviews{background-color:#f5f5f5;padding:12px 0;background-color:#f5f5f5;padding-left:15px}
-.product-details .details-grid-row .ori-reviews .reviews-box{background-color:#fff;padding:20px;min-width:300px;margin-right:20px}
-.product-details .details-grid-row .ori-reviews h3{font-size:25px;color:#262626;font-weight:700;font-family:'Playfair Display',serif}
-.product-details .details-grid-row .ori-reviews p{color:#262626;font-size:17px}
-.product-details .details-grid-row .ori-reviews .ori-reviews-grid{overflow-x:scroll}
+
+.product-details .details-grid-box{padding: 0;}
+.product-details .details-grid-box h3{font-size:25px;color:#262626;font-weight: 900;font-family:'Playfair Display',serif;}
+.product-details .details-grid-box p{color:#262626;font-size:16px}
+.product-details .details-grid-box h4{font-size:18px;font-weight:700;padding-top:15px}
+
+.product-details .details-grid-row .glance-section .row {margin: 0 -0.5rem;}
+.product-details .details-grid-row .glance-section .row > div{padding: 0 0.5rem;}
+
+.product-details .summery-items{background-color:#f9ecd7;display:flex;align-items:center;height:100%}
+.product-details .summery-items .picture-summery {min-width: 90px;text-align:center;}
+.product-details .summery-items .picture-summery img{max-width:68px;width: 100%;margin-left: 5px;}
+.product-details .summery-items .material p{font-size: 14px;padding: 10px 8px;margin: 0;}
+
+.product-details .details-grid-row .product-reviews {background-color:#f5f5f5;padding:12px 0;margin:15px 0;background-color:#f5f5f5;padding-left:15px}
+.product-details .details-grid-row .product-reviews .product-reviews-grid{overflow-x:scroll; display:flex;}
+.product-details .details-grid-row .product-reviews .reviews-box{background-color:#fff;color:#262626;padding: 24px 40px;min-width:300px;margin-right:20px;margin: 0 20px 5px 0;}
+.product-details .details-grid-row .product-reviews h3{font-size:25px;color:#262626;font-weight:700;font-family:'Playfair Display',serif}
+.product-details .details-grid-row .product-reviews .review{font-size: 16px;}
+.product-details .details-grid-row .product-reviews .review-by{font-size: 14px;}
+
+
+.product-details .details-grid-row .happiness-guaranted {max-width:450px;margin: auto;}
 .product-details .details-grid-row .happiness-guaranted img{width:300px;margin:auto;display:block}
-.product-details .details-grid-row .happiness-guaranted p{color:#262626;font-size:15px;text-align:center;padding:0 14px}
+.product-details .details-grid-row .happiness-guaranted p{color:#262626;font-size: 14px;font-weight: 300;line-height: 1.8;text-align:center;padding:0 14px;}
 
 
 
@@ -617,15 +628,15 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .online-florists .row .florist-box .text p {font-size: 15px;}
     .send-flowers .send-flowers-content a {font-size: 15px;}
     .send-flowers .send-flowers-content h4 {font-size: 15px;}
-    .product-details .the-ori-tophead .actions a {font-size: 14px;}
+    .product-details .details-top .actions a {font-size: 14px;}
     .product-details .details-grid-row .picture { background-color:transparent; padding: 0px;margin: 0;}
-    .product-details .the-ori-tophead h3 { font-size: 25px;}
-    .product-details .details-grid-row .details-grid-box h3 {font-size: 22px;padding-top: 30px;}
-    .product-details .details-grid-row .details-grid-box p {font-size: 15px;margin:0;}
-    .product-details .details-grid-row .ori-reviews { margin: 0 12px;}
-    .product-details .details-grid-row .ori-reviews h3 {font-size: 22px;}
-    .product-details .details-grid-row .ori-reviews p {font-size: 15px;}
-    .product-details .details-grid-row .happiness-guaranted p {font-size: 15px;width: 70%;padding: 0;margin: auto;}
+    .product-details .details-top h1 { font-size: 25px;}
+    .product-details .details-grid-box h3 {font-size: 22px;padding-top: 30px;}
+    .product-details .details-grid-box p {font-size: 15px;margin:0;}
+    .product-details .product-reviews { margin: 0 12px;}
+    .product-details .product-reviews h3 {font-size: 22px;}
+    .product-details .product-reviews p {font-size: 15px;}
+    .product-details .happiness-guaranted p {font-size: 15px;width: 70%;padding: 0;margin: auto;}
     .product-details {padding-bottom: 60px;}
 
 }
@@ -722,12 +733,18 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
     .online-florists .tophead p { font-size: 14px;}
     .send-flowers {padding: 20px 0;}
-    .product-details .the-ori-tophead {padding: 25px 15px;}
-    .product-details .details-grid-row .actions a{margin:8px;text-align:center;display: block;font-weight: 500;background: #262626; color: #fff;border: 2px solid #262626;padding: 9px 30px;font-size: 16px;font-weight: 500;}
-    .product-details .details-grid-row .details-grid-box h3 {font-size: 20px;}
-    .product-details .details-grid-row .details-grid-box p {font-size: 14px;padding-right: 30px;}
-    .product-details .details-grid-row .details-grid-box h4 {font-size: 16px;}
-    .product-details .details-grid-row .summery-items p{font-size: 13px;padding-right: 30px;}
+    
+    /* PRODUCT DETAILS */ 
+    .product-details .details-top {padding: 25px 15px;}
+    .product-details .actions a{margin:8px;text-align:center;display: block;font-weight: 500;background: #262626; color: #fff;border: 2px solid #262626;padding: 9px 30px;font-size: 16px;font-weight: 500;}
+    
+    .product-details .details-grid-box h3 {font-size: 20px;}
+    .product-details .details-grid-box p {font-size: 14px;padding-right: 30px;}
+    .product-details .details-grid-box h4 {font-size: 16px;}
+
+    .product-details .summery-items .material p{font-size: 13px;padding-right: 30px;}
+    
+
     .checkout-main .details .order-details img {width: 70px;border-radius: 50%;margin-left: 20px;}
     .checkout-main .details .order-details{flex-direction: column;}
     .secure-checkout .continue-shopping .secure-checkout-text h3 { font-size: 22px;}
@@ -756,7 +773,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .your-details ::placeholder{font-size: 14px;}
     .your-details .your-details-row .guest-feilds a {font-size: 14px;}
     .order-form .order-form-box .description h3 a {font-size: 14px;}
-    .product-details .the-ori-tophead h3 {font-size: 20px;}
+    .product-details .details-top h1 {font-size: 20px;}
     .product-details .details-grid-row .happiness-guaranted img {width: 235px;}
     .checkout-main .checkout-main-categories .basket-summary{padding:20px 0;}
     .checkout-main .checkout-main-categories .payment-options .payment-deliver a{width: 293px;}

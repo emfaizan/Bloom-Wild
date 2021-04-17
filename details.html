@@ -4,93 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <!-- FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
+
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 
-    <!--TOP AREA--->
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
 
-    <section class="top-area">
-        <div class="container">
-            <div class="top-area-content d-flex justify-content-between align-items-center">
-                <div class="flex-area d-flex align-items-center">
-                <div class="login d-flex align-items-center">
-                    <div class="picture">
-                        <img src="assets/images/login.svg" alt="">
+                <div class="top-area-content">
+
+                    <div class="top-left">
+                        <div class="flex-area d-flex align-items-center">
+                            <div class="mobile-menu-trigger">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/burger.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="login d-flex align-items-center">
+                                <div class="picture">
+                                    <img src="assets/images/login.svg" onclick="userpop()" alt="">
+                                </div>
+                                <div class="register d-lg-block d-none">
+                                    <a href="javascript:void(0)" onclick="login()">Log in / Register</a>
+                                </div>
+                            </div>
+                            <div class="ship-country d-lg-flex d-none ml-4">
+                                <h4>Ship to:</h4>
+
+                                <!-- FLAG SELECTOR -->
+                                <div class="dropdown flag-selector">
+                                    <button class="dropdown-toggle" type="button" id="flagSelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/images/country.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="flagSelector">
+                                        <a class="dropdown-item" href="#"><img src="assets/images/country.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-ie.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-fr.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
                     </div>
-                    <div class="register d-lg-block d-none">
-                        <a href="/">Log in / Register</a>
+
+                    <div class="top-center">
+                        <div class="logo">
+                            <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="ship-country d-lg-flex d-none ml-4">
-                    <h4>Ship to:</h4>
-                    <img src="assets/images/country.svg" alt="">
-                </div>
-                </div>
-                <div class="logo">
-                    <a href="/">
-                    <img src="assets/images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="shop-now d-flex align-items-center">
-                    <div class="heart">
-                        <img src="assets/images/heart-border.svg" alt="">
+                    
+                    <div class="top-right">
+                        <div class="shop-now d-flex align-items-center">
+                            <div class="heart">
+                                <img src="assets/images/heart-border.svg" alt="">
+                            </div>
+                            <div class="actions">
+                                <a href="/">Shop Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="actions">
-                        <a href="/">Shop Now</a>
-                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+        
 
-    <!--TOP AREA--->
+        <div class="header-menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul class="nav items-list">
+                        <li><a href="/" class="nav-link">Available soonest <span>new</span> </a></li>
+                        <li class="has-megamenu">
+                            <a href="Javascript:void(0)" class="nav-link">Letterbox flowers </a>
+                            
+                            <div class="megamenu-wrap" style="position:absolute;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox flowers</a></li>
+                                                <li><a href="#">Pastels</a></li>
+                                                <li><a href="#">Bold &amp; bright</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Luxury picks</a></li>
+                                                <li><a href="#">All letterbox flowers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox plants</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Just because</a></li>
+                                                <li><a href="#">Desk decoration</a></li>
+                                                <li><a href="#">All Letterbox plants</a></li>
+                                            </ul>
+                                        </div>
 
-    <!---HEADER--->
-    
-    <header class="d-md-block d-none">
-         <div class="container">
-             <nav class="main-menu">
-               <ul class="nav items-list d-flex justify-content-between">
-                  <li><a href="/" class="nav-link">Avalaible soonest  <span>new</span> </a></li>
-                  <li><a href="/" class="nav-link">Letterbox flowers  </a></li>
-                  <li><a href="/" class="nav-link">Hand-tied Bouquets  </a></li>
-                  <li><a href="/" class="nav-link">Monthly flowers  </a></li>
-                  <li><a href="/" class="nav-link">Plants & home  </a></li>
-                  <li><a href="/" class="nav-link">Occasions  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
-                  <a href="/" class="menu-link d-lg-block d-none">Get help fast</a>
-               </ul>
-             </nav>
-         </div>
+                                        <div class="col-md-4">
+                                            <ul class="featured-category">
+                                                <a href="#">
+                                                    <div class="picture">
+                                                        <img src="//images.ctfassets.net/ucgi79tscdcj/128HO0QNxHjOdbswE5vxd7/cb1e2f822522cb230aff517c63c242d5/tessa_lb_main.jpeg?w=320&amp;fm=webp">
+                                                    </div>
+                                                    <div class="name"><a href="#">Shop seasonal bouquets</a></div>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/" class="nav-link">Hand-tied Bouquets </a></li>
+                        <li><a href="/" class="nav-link">Monthly flowers </a></li>
+                        <li><a href="/" class="nav-link">Plants & home </a></li>
+                        <li><a href="/" class="nav-link">Occasions  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
+                        <li><a href="/" class="menu-link d-lg-block d-none">Get help fast</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
-    <!---HEADER--->
+
 
     <!---DETAILS--->
 
-     <div class="details-page mt-4">
+    <div class="details-page">
 
         <div class="container">
            
@@ -114,11 +184,11 @@
          
         <div class="product-details">
              
-             <!---THE ORI--->
-            <div class="the-ori-tophead">
-                <div class="ori-content d-flex align-items-center justify-content-between">
+             <!-- PRODUCT DETAILS HEADER -->
+            <div class="details-top">
+                <div class="wrapper d-flex align-items-center justify-content-between">
                     <div class="heading">
-                        <h3>The Ori</h3>
+                        <h1>The Ori</h1>
                         <img src="assets/images/star-new.svg" height="18px" alt="">
                         <img src="assets/images/star-new.svg" height="18px" alt="">
                         <img src="assets/images/star-new.svg" height="18px" alt="">
@@ -137,9 +207,9 @@
                     </div>
                 </div>
             </div>
-            <!---THE ORI--->
 
-            <div class="details-grid-row mt-lg-4 mt-0">
+
+            <div class="details-grid-row mt-lg-3 mt-0 px-3">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="picture">
@@ -150,121 +220,125 @@
                          </div>
                     </div>
                     <div class="col-lg-6">
-                       <div class="details-grid-box">
+                        <div class="details-grid-box">
                            <h3>About</h3>
                            <p>We think the peach and white stems in this bouquet are the perfect match. Just like your favourite couple. If their anniversary is coming up, this is the gift for them.</p>
+                           
                            <h4>What's in the box?</h4>
                            <p>24 stems including roses, carnations, dianthus solomio and foliage.                        </p>
-                           <h3 class="my-4">At a glance</h3>
-                           <div class="row">
-                               <div class="col-xl-6 col-12 mb-3">
-                                    <div class="summery-items">
-                                        <div class="picture-summery">
-                                            <img src="assets/images/summery-1.svg" alt="">
-                                        </div>
-                                        <div class="material">
-                                           <p> Every stem is unique so sometimes colours vary or we'll need to use a substitution to give you the best bouquet!</p>
-                                        </div>
-                                    </div>
-                               </div>
-                               <div class="col-xl-6 col-12 mb-3">
-                                <div class="summery-items">
-                                    <div class="picture-summery">
-                                        <img src="assets/images/summery-2.svg" alt="">
-                                    </div>
-                                    <div class="material">
-                                      <p> Arrives in bud. But bursts into life over 48 hours.</p>
-                                    </div>
-                                </div>
-                               </div>
-                               <div class="col-xl-6 col-12 mb-3">
-                                <div class="summery-items">
-                                    <div class="picture-summery">
-                                        <img src="assets/images/summery-3.svg" alt="">
-                                    </div>
-                                    <div class="material">
-                                      <p> Delivered through the letterbox with easy arranging tips.</p>
-                                    </div>
-                                </div>
-                               </div>
-                               <div class="col-xl-6 col-12 mb-3">
-                                <div class="summery-items">
-                                    <div class="picture-summery ">
-                                        <img src="assets/images/summery-4.svg" alt="">
-                                    </div>
-                                    <div class="material">
-                                      <p>Choose our free Royal Mail service or premium courier for delivery on your nominated day.</p>
-                                    </div>
-                                </div>
-                               </div>
-                               <div class="col-xl-6 col-12 mb-3">
-                                <div class="summery-items">
-                                    <div class="picture-summery">
-                                        <img src="assets/images/summery-5.svg" alt="">
-                                    </div>
-                                    <div class="material">
-                                      <p>Choose our free Royal Mail service or premium courier for delivery on your nominated day.</p>
-                                    </div>
-                                </div>
-                               </div>
-                               <div class="col-xl-6 col-12 mb-3">
-                                <div class="summery-items">
-                                    <div class="picture-summery">
-                                        <img src="assets/images/summery-2.svg" alt="">
-                                    </div>
-                                    <div class="material">
-                                      <p>Delicate flowers are wrapped in widely recyclable petal protectors.</p>
-                                    </div>
-                                </div>
-                               </div>
-                           </div>
-                        </div>
-                        <div class="ori-reviews mr-3">
-                            <div class="ori-reviews-content">
-                                <h3>The Ori Reviews</h3>
-                                <div class="ori-reviews-grid d-flex">
-                                  
-                                        <div class="reviews-box">
-                                            <div class="stars">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
+                           
+                            <div class="glance-section">
+                                <h3 class="my-4">At a glance</h3>
+                                <div class="row">
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery">
+                                                <img src="assets/images/summery-1.svg" alt="">
                                             </div>
-                                            <p class="mt-4">Easy to order, pleasant staff, looks flowers</p>
-                                            <p class="mt-4"> <b> Madeline </b>7 days ago</p>
-                                        </div>
-                                    
-                                   
-                                        <div class="reviews-box">
-                                            <div class="stars">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
+                                            <div class="material">
+                                            <p> Every stem is unique so sometimes colours vary or we'll need to use a substitution to give you the best bouquet!</p>
                                             </div>
-                                            <p class="mt-4">Easy to order, pleasant staff, looks flowers</p>
-                                            <p class="mt-4"> <b> Madeline </b>7 days ago</p>
                                         </div>
-                                   
-                                
-                                        <div class="reviews-box">
-                                            <div class="stars">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
-                                                <img src="assets/images/star-new.svg" width="15px" alt="">
+                                    </div>
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery">
+                                                <img src="assets/images/summery-2.svg" alt="">
                                             </div>
-                                            <p class="mt-4">Easy to order, pleasant staff, looks flowers</p>
-                                            <p class="mt-4"> <b> Madeline </b>7 days ago</p>
+                                            <div class="material">
+                                            <p> Arrives in bud. But bursts into life over 48 hours.</p>
+                                            </div>
                                         </div>
-                                    
+                                    </div>
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery">
+                                                <img src="assets/images/summery-3.svg" alt="">
+                                            </div>
+                                            <div class="material">
+                                            <p> Delivered through the letterbox with easy arranging tips.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery ">
+                                                <img src="assets/images/summery-4.svg" alt="">
+                                            </div>
+                                            <div class="material">
+                                            <p>Choose our free Royal Mail service or premium courier for delivery on your nominated day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery">
+                                                <img src="assets/images/summery-5.svg" alt="">
+                                            </div>
+                                            <div class="material">
+                                            <p>Choose our free Royal Mail service or premium courier for delivery on your nominated day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-12 mb-3">
+                                        <div class="summery-items">
+                                            <div class="picture-summery">
+                                                <img src="assets/images/summery-2.svg" alt="">
+                                            </div>
+                                            <div class="material">
+                                            <p>Delicate flowers are wrapped in widely recyclable petal protectors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="product-reviews">
+                            <h3>The Ori Reviews</h3>
+                            <div class="product-reviews-grid">
+                                
+                                <div class="reviews-box">
+                                    <div class="stars">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                    </div>
+
+                                    <div class="review mt-4">Easy to order, pleasant staff, looks flowers</div>
+                                    <div class="review-by mt-4"> <b> Madeline </b>7 days ago</div>
+                                </div>
+                                
+                                
+                                <div class="reviews-box">
+                                    <div class="stars">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                    </div>
+                                    <p class="mt-4">Easy to order, pleasant staff, looks flowers</p>
+                                    <p class="mt-4"> <b> Madeline </b>7 days ago</p>
+                                </div>
+                            
+                                <div class="reviews-box">
+                                    <div class="stars">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                        <img src="assets/images/star-new.svg" width="15px" alt="">
+                                    </div>
+                                    <p class="mt-4">Easy to order, pleasant staff, looks flowers</p>
+                                    <p class="mt-4"> <b> Madeline </b>7 days ago</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
                         <div class="happiness-guaranted">
                             <div class="happy-picture">
                                 <img src="assets/images/happiness-guaranted.svg" width="" alt="">
