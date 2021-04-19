@@ -181,10 +181,10 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 .product-collections .product-tophead .page-title {text-align:center;}
 
-.product-collections .product-tophead .border-filter {display: inline-block;color: #262626 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 10px 15px;}
+.product-collections .product-tophead .border-filter {line-height: 20px;display: inline-block;color: #262626 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 10px 15px;}
 .product-collections .product-tophead .border-filter h4 {font-size: 17px;font-weight: 500;margin: 0;}
 .product-collections .product-tophead .filter h5 {font-size: 15px;font-weight: 400;margin-left: 12px;color: #94999e;margin-bottom: 0;}
-.product-collections .product-tophead .sort {display: inline-block;color: #262626 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 10px 15px;font-size: 17px;font-weight: 500;margin: 0;}
+.product-collections .product-tophead .sort {display: inline-block;color: #262626 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 10px 15px;font-size: 17px;font-weight: 500;margin: 0;line-height: 20px;}
 
 .product-collections .product-grid {background-color: #f9ecd7;padding: 15px 0;display:flex;flex-wrap:wrap;}
 .product-collections .product-grid .product-item {flex:0 0 33.33%;width:33.33%;padding: 0 15px;}
@@ -739,6 +739,11 @@ transform: translateY(-50%);}
     .product-details .happiness-guaranted p {font-size: 15px;width: 70%;padding: 0;margin: auto;}
     .product-details {padding-bottom: 60px;}
     .main-account-tabs .account-list ul li:nth-child(n+2) {width: 50%;}
+    .product-collections .product-grid .product-item {flex: 0 0 50%; width: 50%;}
+    .product-collections .product-tophead .page-title {text-align: left;order: -1;width: 100%;flex: 0 0 100%;padding-bottom: 40px;}
+    .product-collections .product-tophead {flex-wrap: wrap;}
+    .product-collections .product-tophead > div {text-align: left;}
+    .product-collections .product-tophead .filter{justify-content: flex-end;margin-right: 10px;} 
 }
 
 @media (max-width:768px){
@@ -862,6 +867,11 @@ transform: translateY(-50%);}
     .occasion-btn-popup .occasion-popcon .occasion-popup p { padding: 0 60px;}
     .occasion-btn-popup .occasion-popcon{width: 100%;}
     .main-account-tabs .row .occasions-list {max-width: 450px; width: 100%; margin: auto;}
+    .product-collections.filter-visible .product-grid .product-item {flex: 0 0 100%;width: 100%;}
+    .product-collections .product-tophead .border-filter {width: 100%;text-align: center;}
+    .product-collections .product-tophead .sort {width: 100%;display: flex;justify-content: center;}
+    .product-collections .product-tophead .filter {margin-right: 0px;}
+    .product-collections .product-tophead .border-filter {border-right: none;}
 }
 
 
