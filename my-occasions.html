@@ -4,89 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <!-- FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
-    <title>Document</title>
+    
+    <title>My Occasions</title>
 </head>
 <body>
 
-    <!--TOP AREA--->
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
 
-    <section class="top-area">
-        <div class="container">
-            <div class="top-area-content d-flex justify-content-between align-items-center">
-                <div class="flex-area d-flex align-items-center">
-                <div class="login d-flex align-items-center">
-                    <div class="picture">
-                        <img src="assets/images/login.svg" alt="">
+                <div class="top-area-content">
+
+                    <div class="top-left">
+                        <div class="flex-area d-flex align-items-center">
+                            <div class="mobile-menu-trigger">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/burger.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="login d-flex align-items-center">
+                                <div class="picture">
+                                    <img src="assets/images/login.svg" onclick="userpop()" alt="">
+                                </div>
+                                <div class="register d-lg-block d-none">
+                                    <a href="javascript:void(0)" onclick="login()">Log in / Register</a>
+                                </div>
+                            </div>
+                            <div class="ship-country d-lg-flex d-none ml-4">
+                                <h4>Ship to:</h4>
+
+                                <!-- FLAG SELECTOR -->
+                                <div class="dropdown flag-selector">
+                                    <button class="dropdown-toggle" type="button" id="flagSelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/images/country.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="flagSelector">
+                                        <a class="dropdown-item" href="#"><img src="assets/images/country.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-ie.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-fr.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
                     </div>
-                    <div class="register d-lg-block d-none">
-                        <a href="/">Log in / Register</a>
+
+                    <div class="top-center">
+                        <div class="logo">
+                            <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="ship-country d-lg-flex d-none ml-4">
-                    <h4>Ship to:</h4>
-                    <img src="assets/images/country.svg" alt="">
-                </div>
-                </div>
-                <div class="logo">
-                    <a href="/">
-                    <img src="assets/images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="shop-now d-flex align-items-center">
-                    <div class="heart">
-                        <img src="assets/images/heart-border.svg" alt="">
+                    
+                    <div class="top-right">
+                        <div class="shop-now d-flex align-items-center">
+                            <div class="heart">
+                                <img src="assets/images/heart-border.svg" alt="">
+                            </div>
+                            <div class="actions">
+                                <a href="/">Shop Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="actions">
-                        <a href="/">Shop Now</a>
-                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+        
 
-    <!--TOP AREA--->
+        <div class="header-menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul class="nav items-list">
+                        <li><a href="/" class="nav-link">Available soonest <span>new</span> </a></li>
+                        <li class="has-megamenu">
+                            <a href="Javascript:void(0)" class="nav-link">Letterbox flowers </a>
+                            
+                            <div class="megamenu-wrap" style="position:absolute;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox flowers</a></li>
+                                                <li><a href="#">Pastels</a></li>
+                                                <li><a href="#">Bold &amp; bright</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Luxury picks</a></li>
+                                                <li><a href="#">All letterbox flowers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox plants</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Just because</a></li>
+                                                <li><a href="#">Desk decoration</a></li>
+                                                <li><a href="#">All Letterbox plants</a></li>
+                                            </ul>
+                                        </div>
 
-    <!---HEADER--->
-    
-    <header class="d-md-block d-none">
-         <div class="container">
-             <nav class="main-menu">
-               <ul class="nav items-list d-flex justify-content-between">
-                  <li><a href="/" class="nav-link">Avalaible soonest  <span>new</span> </a></li>
-                  <li><a href="/" class="nav-link">Letterbox flowers  </a></li>
-                  <li><a href="/" class="nav-link">Hand-tied Bouquets  </a></li>
-                  <li><a href="/" class="nav-link">Monthly flowers  </a></li>
-                  <li><a href="/" class="nav-link">Plants & home  </a></li>
-                  <li><a href="/" class="nav-link">Occasions  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
-                  <a href="/" class="menu-link d-lg-block d-none">Get help fast</a>
-               </ul>
-             </nav>
-         </div>
+                                        <div class="col-md-4">
+                                            <ul class="featured-category">
+                                                <a href="#">
+                                                    <div class="picture">
+                                                        <img src="//images.ctfassets.net/ucgi79tscdcj/128HO0QNxHjOdbswE5vxd7/cb1e2f822522cb230aff517c63c242d5/tessa_lb_main.jpeg?w=320&amp;fm=webp">
+                                                    </div>
+                                                    <div class="name"><a href="#">Shop seasonal bouquets</a></div>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/" class="nav-link">Hand-tied Bouquets </a></li>
+                        <li><a href="/" class="nav-link">Monthly flowers </a></li>
+                        <li><a href="/" class="nav-link">Plants & home </a></li>
+                        <li><a href="/" class="nav-link">Occasions  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
+                        <li><a href="/" class="menu-link d-lg-block d-none">Get help fast</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
-    <!---HEADER--->
 
     <!--CATEGORIES TABS SIDEBAR--->
 
@@ -96,16 +165,16 @@
                 <div class="col-md-3 d-md-block d-none">
                      <div class="account-nav">
                          <ul>
-                             <li><a href="my-order.html">My Orders</a></li>
-                             <li><a href="/">My Occasions</a></li>
-                             <li><a href="/">My Favourites</a></li>
-                             <li><a href="/">My Credit</a></li>
-                             <li><a href="/">Delivery Addresses</a></li>
-                             <li><a href="/">Marketing Preferences</a></li>
-                             <li><a href="/">Payment Options</a></li>
-                             <li><a href="/">Account details</a></li>
+                             <li><a href="my-orders.html"><span>My Orders</span></a></li>
+                             <li class="active"><a href="my-occasions.html"><span>My Occasions</span></a></li>
+                             <li><a href="my-favourites.html"><span>My Favourites</span></a></li>
+                             <li><a href="my-credit.html"><span>My Credit</span></a></li>
+                             <li><a href="delivery-address.html"><span>Delivery Addresses</span></a></li>
+                             <li><a href="marketing-preferences.html"><span>Marketing Preferences</span></a></li>
+                             <li><a href="payment-options.html"><span>Payment Options</span></a></li>
+                             <li><a href="account-details.html"><span>Account details</span></a></li>
                          </ul>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-md-9">
                     <div class="occasions-list">
@@ -117,12 +186,13 @@
                         </div>
                         <div class="occasion-tophead">
                             <h3>You have no occasion reminders saved</h3>
-                            <p>Add <b> 3 </b>reminders for <b> £5 off </b></p>
+                            <p>Add <b>3</b> reminders for <b>£5 off</b></p>
                             <p>Pick an occasion from below to get started</p>
                         </div>
-                        <div class="row mt-5">
-                            
-                            <div class="col-lg-5">
+
+                        <div class="row no-gutters mt-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -135,7 +205,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -148,7 +219,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -161,7 +233,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -174,7 +247,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -187,7 +261,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -200,7 +275,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -213,7 +289,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+
+                            <div class="col-lg-6">
                                 <div class="occasion-type-list">
                                     <div class="picture">
                                         <a href="/">
@@ -227,9 +304,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="actions text-center">
+
+                        <div class="actions text-center mt-md-5 mt-4">
                             <a href="javascript:void(0)" onclick="occasionpopup()"><img src="assets/images/timer-icon-white.svg" class="mr-2" alt="">Add Occasions</a>
-                            <p>Add <b> 3 </b>reminders for <b> £5 off </b></p>
+                            <p>Add <b>3</b> reminders for <b> £5 off </b></p>
                         </div>
                     </div>
                 </div>
@@ -288,6 +366,7 @@
            </div>
         
     </div>
+
     <div class="occasion-btn-popup" id="mums-pop-btn">
        <div class="occasion-popcon">
            <div class="occasion-popup">
@@ -344,100 +423,100 @@
     
 </div>
 
-    <script>
-        function occasionpopup(){
-            document.getElementById("occasion-btn").classList.toggle("active");
-        }
-        function mumspop(){
-            document.getElementById("mums-pop-btn").classList.toggle("active");
-        }
-    </script>
+<script>
+    function occasionpopup(){
+        document.getElementById("occasion-btn").classList.toggle("active");
+    }
+    function mumspop(){
+        document.getElementById("mums-pop-btn").classList.toggle("active");
+    }
+</script>
 
-    <!--CATEGORIES TABS SIDEBAR--->
+<!--CATEGORIES TABS SIDEBAR--->
 
 
 
-    <!---FOOTER--->
+<!---FOOTER--->
 
-    <footer>
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                       <div class="logo text-lg-left text-center">
-                           <img src="assets/images/footer-logo.svg" alt="">
-                       </div>
+<footer>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="logo text-lg-left text-center">
+                        <img src="assets/images/footer-logo.svg" alt="">
                     </div>
-                    <div class="col-lg-2 col-md-6">
-                       <div class="contact">
-                           <h5>Email us <b> here</b></h5>
-                           <div class="flex-area d-flex flex-lg-column flex-row align-items-lg-start align-items-center">
-                           <div class="social-icons">
-                               <i class="fa fa-instagram"></i>
-                               <i class="fa fa-facebook"></i>
-                               <i class="fa fa-twitter"></i>
-                           </div>
-                           <div class="picture">
-                               <img src="assets/images/google-store.svg" alt="">
-                           </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="contact">
+                        <h5>Email us <b> here</b></h5>
+                        <div class="flex-area d-flex flex-lg-column flex-row align-items-lg-start align-items-center">
+                        <div class="social-icons">
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
                         </div>
-                       </div>  
-                    </div>
-                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
-                       <div class="footer-box">
-                           <h4>About us</h4>
-                           <ul>
-                               <li><a href="/">Our story</a></li>
-                               <li><a href="/">Happiness <br> guaranteed</a></li>
-                               <li><a href="/">Our florists</a></li>
-                               <li><a href="/">Sustainability</a></li>                        
-                               <li><a href="/">Our tech blog</a></li>                      
-                               <li><a href="/">Careers</a></li>                           
-                               <li><a href="/">Modern Slavery Act</a></li>                               
-                               <li><a href="/">Sitemap</a></li>                                                         
-                           </ul>
-                       </div> 
-                    </div>
-                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
-                        <div class="footer-box">
-                            <h4>Our flowers</h4>
-                            <ul>
-                                <li><a href="/">Flower care</a></li>
-                                <li><a href="/">Flower journal</a></li>
-                                <li><a href="/">Workshops</a></li>
-                                <li><a href="/">Flower subscriptions</a></li>                        
-                                                                                 
-                            </ul>
-                        </div> 
-                    </div>
-                   
-                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
-                        <div class="footer-box">
-                            <h4>Need help?</h4>
-                            <ul>
-                                <li><a href="/">Contact us</a></li>                           
-                                <li><a href="/">Delivery</a></li>                               
-                                <li><a href="/">Reviews</a></li>
-                                <li><a href="/">Refer a friend</a></li>                                                                            
-                            </ul>
+                        <div class="picture">
+                            <img src="assets/images/google-store.svg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
-                        <div class="footer-box">
-                            <h4>International sites</h4>
-                            <ul>
-                                <li><a href="/">Bloom & Wild <br> France</a></li>                           
-                                <li><a href="/">Bloom & Wild <br> Germany</a></li>                               
-                                <li><a href="/">Bloom & Wild <br> Ireland</a></li>
-                                <li><a href="/">Bloom & Wild <br> Australia</a></li>                                                                            
-                            </ul>
-                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
+                    <div class="footer-box">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="/">Our story</a></li>
+                            <li><a href="/">Happiness <br> guaranteed</a></li>
+                            <li><a href="/">Our florists</a></li>
+                            <li><a href="/">Sustainability</a></li>                        
+                            <li><a href="/">Our tech blog</a></li>                      
+                            <li><a href="/">Careers</a></li>                           
+                            <li><a href="/">Modern Slavery Act</a></li>                               
+                            <li><a href="/">Sitemap</a></li>                                                         
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
+                    <div class="footer-box">
+                        <h4>Our flowers</h4>
+                        <ul>
+                            <li><a href="/">Flower care</a></li>
+                            <li><a href="/">Flower journal</a></li>
+                            <li><a href="/">Workshops</a></li>
+                            <li><a href="/">Flower subscriptions</a></li>                        
+                                                                                
+                        </ul>
+                    </div> 
+                </div>
+                
+                <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
+                    <div class="footer-box">
+                        <h4>Need help?</h4>
+                        <ul>
+                            <li><a href="/">Contact us</a></li>                           
+                            <li><a href="/">Delivery</a></li>                               
+                            <li><a href="/">Reviews</a></li>
+                            <li><a href="/">Refer a friend</a></li>                                                                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mt-lg-0 mt-5">
+                    <div class="footer-box">
+                        <h4>International sites</h4>
+                        <ul>
+                            <li><a href="/">Bloom & Wild <br> France</a></li>                           
+                            <li><a href="/">Bloom & Wild <br> Germany</a></li>                               
+                            <li><a href="/">Bloom & Wild <br> Ireland</a></li>
+                            <li><a href="/">Bloom & Wild <br> Australia</a></li>                                                                            
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!---FOOTER--->
+    </div>
+</footer>
+<!---FOOTER--->
     
 </body>
 </html>
