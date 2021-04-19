@@ -161,14 +161,15 @@
 
     <!--PRODUCTS COLLECTIONS--->
 
-    <section class="product-collections">
+    <section class="product-collections filter-visible">
         <div class="container">
             <div class="product-tophead">
                 <div class="filter-box">
                     <div class="filter d-flex align-items-center">
                         <a href="Javascript:void(0)" class="border-filter">
                             <i></i>
-                            <h4>Show Filters</h4>
+                            <h4 class="showfilters">Show Filters</h4>
+                            <h4 class="hidefilters" style="display:none">Hide Filters</h4>
                         </a>
                         <h5>68 gifts</h5>
                     </div>
@@ -186,10 +187,191 @@
                 </div>
             </div>
 
-            <div class="product-grid">
-                <div class="row">
-                    
-                    <div class="col-lg-4 col-md-6 col-12">
+            <div class="products-filter-wrap">
+                <div class="product-filters">
+
+                    <div class="content-area">
+                        <h5>Delivery</h5>
+
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                <span class="icon">
+                                    <img src="assets/images/calendar.svg" alt="">
+                                </span>
+                                Next-day
+                            </div>
+                            <div class="count">22</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                <span class="icon">
+                                    <img src="assets/images/date.svg" alt="">
+                                </span>
+                                Specific date...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <h5>Arrival</h5>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                Letterbox Friendly
+                            </div>
+                            <div class="count">7</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Comes pre-arranged
+                            </div>
+                            <div class="count">7</div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <h5>Price</h5>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                < £30
+                            </div>
+                            <div class="count">4</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                £30 - £40
+                            </div>
+                            <div class="count">14</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                £40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <h5>Type</h5>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                < £30
+                            </div>
+                            <div class="count">4</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                £30 - £40
+                            </div>
+                            <div class="count">14</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                £40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <h5>Colours</h5>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                <span class="icon">
+                                    <img src="assets/images/calendar.svg" alt="">
+                                </span>
+                                White
+                            </div>
+                            <div class="count">1</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                <span class="icon">
+                                    <img src="assets/images/calendar.svg" alt="">
+                                </span>
+                                White
+                            </div>
+                            <div class="count">1</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                <span class="icon">
+                                    <img src="assets/images/calendar.svg" alt="">
+                                </span>
+                                White
+                            </div>
+                            <div class="count">1</div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <h5>Occasions</h5>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                Birthday
+                            </div>
+                            <div class="count">4</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Celebration
+                            </div>
+                            <div class="count">1</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Thank you
+                            </div>
+                            <div class="count">3</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Romantic
+                            </div>
+                            <div class="count">3</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Just Because
+                            </div>
+                            <div class="count">4</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="filter-name">
+                                Sympathy
+                            </div>
+                            <div class="count">10</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="filter-name">
+                                Easter
+                            </div>
+                            <div class="count">14</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                        
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -208,12 +390,12 @@
                                 <h3> <a href="Javascript:void(0)"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -229,7 +411,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-2.webp" alt="">
@@ -245,12 +427,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -266,7 +448,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-3.webp" alt="">
@@ -282,12 +464,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -303,7 +485,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-4.webp" alt="">
@@ -319,12 +501,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -340,7 +522,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -356,12 +538,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -377,7 +559,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -393,12 +575,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -414,7 +596,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -430,12 +612,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -451,7 +633,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -467,12 +649,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -488,7 +670,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -504,12 +686,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -525,7 +707,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -541,12 +723,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -562,7 +744,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -578,12 +760,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
@@ -599,7 +781,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="product-item">
                         <div class="product-box">
                             <div class="picture">
                                 <img src="assets/images/product-1.webp" alt="">
@@ -615,12 +797,12 @@
                                 <h3> <a href="/"> The Seasonal Tulips</a></h3>
                                 <h4>Hand-tied Flowers</h4>
                                 <div class="flex-area d-flex align-items-center mt-4 justify-content-center">
-                                   <div class="price">
-                                       <h5>£32</h5>
-                                   </div>
-                                   <div class="button">
-                                       <a href="checkout.html">Send</a>
-                                   </div>
+                                <div class="price">
+                                    <h5>£32</h5>
+                                </div>
+                                <div class="button">
+                                    <a href="checkout.html">Send</a>
+                                </div>
                                 </div>
                                 <div class="reviews d-flex align-items-center mt-3 justify-content-center">
                                     <div class="stars">
