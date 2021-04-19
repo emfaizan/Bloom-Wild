@@ -33,3 +33,7 @@ $(document).on('click', '.mobile-menu-active .has-megamenu', function(){
 $(document).on('click', '.footer-box h4', function(){
     $(this).parent('.footer-box').toggleClass('active')
 });
+
+$(document).on('click', '.border-filter', function(){
+    $('.product-collections').toggleClass('filter-visible');
+});
