@@ -311,9 +311,12 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .delivery-details .pre-order .buttons-area .button-1:nth-child(1){border-right:1px solid #cdcfd1!important}
 .delivery-details .pre-order .buttons-area .button-1 .text-change{color:#b8bbbe;font-weight:700}
 .delivery-details .pre-order .buttons-area .button-1 p{font-size:15px;text-align:left}
-.delivery-details .pre-order .buttons-area .button-1 .text-gray{color:#b8bbbe}
-
-
+.delivery-details .pre-order .buttons-area .button-1 .text-gray{color:#b8bbbe;}
+.delivery-details .input-address-content .address-search{border: 1px solid #cdcfd1;height: 60px;position: relative;}
+.delivery-details .input-address-content .address-search .form-control{border: none;box-shadow: none !important;padding-top: 30px !important;}
+.delivery-details .input-address-content .address-search label{color: #262626;font-weight: 600;text-indent: 15px;position: absolute;top:5px;}
+.delivery-details .input-address-content .address-search img{position: absolute;right: 10px;top: 50%;
+transform: translateY(-50%);}
 
 
 /*  YOUR DETAILS   */
