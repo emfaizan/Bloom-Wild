@@ -29,3 +29,7 @@ $(document).on('click', '.mobile-menu-active .has-megamenu', function(){
     $(this).toggleClass('active');
     $('.header-menu').toggleClass('mega-menu-active');
 });
+
+$(document).on('click', '.footer-box h4', function(){
+    $(this).parent('.footer-box').toggleClass('active')
+});
