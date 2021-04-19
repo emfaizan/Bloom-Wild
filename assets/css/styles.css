@@ -394,10 +394,10 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .user-popup .user-content .title img{padding-right:15px}
 .user-popup .user-content .form-group{margin:14px 22px}
 .user-popup .user-content .border-gray{color:#262626!important;background-color:transparent;border:2px solid#e9ecef;height:49px;display:block;font-weight:600;font-size:16px;width:100%}
-.user-popup .user-content .border-dark{color:#262626!important;background-color:transparent;border:2px solid#262626;height:49px;display:block;font-weight:600;font-size:16px;width:100%}
-.user-popup .user-content .title h3{color:#262626;font-size:24px;font-weight:700;padding-left:15px}
-.user-popup .user-content{overflow-y:scroll;background:#fff;width:25%; min-width:300px; position:fixed;top:0;left:-300px;bottom:0;z-index:-1;opacity:0}
-.user-popup .back-overlay{height:100vh;width:100%;background-color:rgba(0,0,0,0.7);display:none;position:fixed;top:0;left:0;bottom:0; z-index: 1;}
+.user-popup .user-content .border-dark{color:#262626!important;background-color:transparent;border:2px solid#262626;height:49px;display:block;font-weight: 500;font-size:16px;width:100%;}
+.user-popup .user-content .title h3{color:#262626;font-size: 22px;font-weight: 900;padding-left:15px;margin: 0;font-family: 'Playfair Display';}
+.user-popup .user-content{overflow-y:scroll;background:#fff;width: 300px;min-width: 300px;position:fixed;top:0;left:-300px;bottom:0;z-index:-1;opacity:0;}
+.user-popup .back-overlay{height:100vh;width:100%;background-color: rgba(0,0,0,0.5);display:none;position:fixed;top:0;left:0;bottom:0;z-index: 1;}
 .user-popup.active .back-overlay{display:block}
 .user-popup.active .user-content{opacity:1;transition:.3s ease-in-out;left:0;z-index:11}
 
@@ -478,10 +478,14 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 
 
-/*   CCOUNT TABS CONTENT  */
+/*   ACCOUNT TABS CONTENT  */
 .main-account-tabs .nav-tabs .nav-link{border-radius:0!important}
-.main-account-tabs .account-nav ul li a{color:#262626;font-weight:500;font-size:17px}
-.main-account-tabs .account-nav ul li{margin-bottom:25px;text-align:right}
+.account-nav {margin-right:23px;}
+.account-nav ul li{margin-bottom:25px;text-align:right}
+.account-nav ul li a{color:#262626;font-weight:500;font-size:17px}
+.account-nav ul li a span {padding:0 5px;}
+.account-nav ul li.active a span {background:#f9ecd7;}
+
 .main-account-tabs .account-list ul li:nth-child(n+2){width:30%;text-align:center}
 .main-account-tabs .account-list ul li:nth-child(1){width:40%;text-align:left}
 .main-account-tabs .row .account-list{padding:0 40px}
@@ -498,19 +502,19 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 
 /*   MY OCCASIONS   */
-.main-account-tabs .row .occasions-list h2{color:#262626;font-weight:700;font-size:30px;font-family:'Playfair Display',serif}
+.main-account-tabs .row .occasions-list{padding: 0 15px 40px;}
+.main-account-tabs .row .occasions-list h2{color:#262626;font-weight: 900;font-size: 32px;font-family:'Playfair Display',serif;}
 .main-account-tabs .row .occasions-list .occasion-tophead{margin-top:50px;text-align:center}
 .main-account-tabs .row .occasions-list h3{color:#262626;font-size:30px;font-weight:400}
-.main-account-tabs .row .occasions-list p{color:#262626;font-size:14px;margin:0}
-.main-account-tabs .row .occasions-list{padding:0 40px 40px}
-.main-account-tabs .row .occasions-list .occasion-type-list{margin-bottom:25px}
+.main-account-tabs .row .occasions-list p{color:#262626;font-size: 15px;margin: 6px 0;font-weight: 300;}
+.main-account-tabs .row .occasions-list .occasion-type-list{margin: 12px 8px;}
 .main-account-tabs .row .occasions-list .picture{position:relative}
 .main-account-tabs .row .occasions-list .picture img{width:100%;border-radius:9px}
-.main-account-tabs .row .occasions-list .picture .layer-box{background:hsla(0,0%,100%,0.6);-webkit-backdrop-filter:blur(20px) brightness(110%);backdrop-filter:blur(20px) brightness(110%);border-radius:5px;padding:12px;box-shadow:0 0 7px #000;border:1px solid rgba(0,0,0,0.1);display:flex;justify-content:space-between;position:absolute;bottom:10px;right:5px;left:5px}
-.main-account-tabs .row .occasions-list .picture .layer-box h4{color:#262626;font-size:20px;margin:0;font-weight:400}
-.main-account-tabs .row .occasions-list .picture .layer-box img{width:15px;transition:.2s ease-in}
-.main-account-tabs .row .occasions-list .picture .layer-box:hover img{transform:translateX(10px)}
-.main-account-tabs .row .occasions-list .actions a{display:inline-block;color:#fff!important;background-color:#262626;border:1px solid#262626;padding:10px 20px}
+.main-account-tabs .row .occasions-list .picture .layer-box{background:hsla(0,0%,100%,0.6);-webkit-backdrop-filter:blur(20px) brightness(110%);backdrop-filter:blur(20px) brightness(110%);border-radius:5px;padding:12px;display:flex;justify-content:space-between;position:absolute;bottom:10px;right: 10px;left: 10px;box-shadow: 0 0 7px rgb(0 0 0 / 10%);border: 1px solid rgba(0,0,0,.1);}
+.main-account-tabs .row .occasions-list .picture .layer-box h4{color:#262626;font-size: 19px;margin:0;line-height: 28px;font-weight:400;}
+.main-account-tabs .row .occasions-list .picture .layer-box img{width:15px;transition:.2s ease-in;transform: translateX(-5px);}
+.main-account-tabs .row .occasions-list .picture .layer-box:hover img{transform: translateX(0px);}
+.main-account-tabs .row .occasions-list .actions a{display: inline-flex;align-items: center;color:#fff!important;background-color:#262626;border:1px solid#262626;padding:10px 20px;font-size: 14px;}
 
 /*  MY FAVOURITES  */
 .main-account-tabs .row .my-favourites-lists{padding: 0 40px 40px;}
@@ -559,7 +563,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 /* OCCASION BTN POPUP  */
 .occasion-btn-popup .back-overlay{width:100%;height:100vh;background-color:rgba(0,0,0,0.6);position:fixed;top:0;left:0;display:none}
 .occasion-btn-popup.active .back-overlay{display:block}
-.occasion-btn-popup .occasion-popcon{background:#fff;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);z-index:1;padding:50px 30px}
+.occasion-btn-popup .occasion-popcon{background:#fff;position:fixed; max-height:90vh; overflow:auto;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);z-index:1;padding:50px 30px}
 .occasion-btn-popup.active .occasion-popcon{transform:translate(-50%,-50%) scale(1);transition:.2s ease-in}
 .occasion-btn-popup .occasion-popcon .occasion-popup img{position:absolute;right:10px;top:20px;cursor:pointer}
 .occasion-btn-popup .occasion-popcon .occasion-popup h3{color:#262626;font-weight:700;font-size:25px;font-family:'Playfair Display',serif}
