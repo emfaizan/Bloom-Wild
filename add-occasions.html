@@ -16,6 +16,9 @@
     
     <!-- FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+     <!-- CUSTOM JS -->
+     <script src="assets/js/main.js"></script>
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -35,7 +38,7 @@
                 <div class="flex-area d-flex align-items-center">
                 <div class="login d-flex align-items-center">
                     <div class="picture">
-                        <img src="assets/images/login.svg" alt="">
+                        <img src="assets/images/login.svg" onclick="userpop()" alt="">
                     </div>
                     <div class="register d-lg-block d-none">
                         <a href="/">Log in / Register</a>
@@ -64,6 +67,54 @@
     </section>
 
     <!--TOP AREA--->
+
+    <div class="user-popup shadow-sm" id="userpopup">
+        <div class="back-overlay"></div>
+     <div class="user-content">
+     <div class="title d-flex justify-content-between align-items-center">
+         <h3>Account</h3>
+          <div class="cancel">
+             <img src="assets/images/form-cancel.svg" onclick="userpop()" alt="">
+          </div>
+     </div>
+     <div class="form-body">
+      <div class="form-group">
+        <button class="border-dark">My Orders</button>
+     </div>
+     <div class="form-group">
+      <button class="border-dark">My Ocaasions</button>
+     </div>
+     <div class="form-group">
+      <button class="border-dark"><img src="assets/images/new.svg" alt=""> My Favourites</button>
+     </div>
+     <div class="form-group">
+      <button class="border-dark">My credit</button>
+     </div>
+     <div class="form-group mt-5">
+         <button class="border-gray">Delivery address</button>
+     </div>
+     <div class="form-group">
+      <button class="border-gray">Marketing preferences</button>
+    </div>
+    <div class="form-group">
+      <button class="border-gray">Payment Options</button>
+    </div>
+    <div class="form-group">
+      <button class="border-gray">Account details</button>
+    </div>
+    <div class="form-group mt-5">
+      <button class="border-gray">Download Our App</button>
+    </div>
+    <div class="form-group">
+      <button class="border-gray">Need Help?</button>
+    </div>
+    </div>
+  <div class="logout text-center mt-5">
+      <a href="/"> Logout</a>
+  </div>
+ </div>
+ 
+    </div>
 
     <!---HEADER--->
     
@@ -108,127 +159,27 @@
                      </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="occasions-list">
+                    <div class="occasions-add-lists">
                         <div class="heading d-flex justify-content-between align-items-center">
                             <h2>Occasions</h2>
-                            <div class="actions d-lg-none d-block">
-                                <a href="/">Add</a>
+                            <div class="actions">
+                                <a href="/">Add occasion</a>
                             </div>
                         </div>
-                        <div class="occasion-tophead">
-                            <h3>You have no occasion reminders saved</h3>
-                            <p>Add <b> 3 </b>reminders for <b> £5 off </b></p>
-                            <p>Pick an occasion from below to get started</p>
-                        </div>
-                        <div class="row mt-5">
-                            
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                        <img src="assets/images/best-seller-1.webp" alt="">
-                                        <div class="layer-box">
-                                            <h4>Mother's Day</h4>
-                                            <img src="assets/images/chevron.svg" alt="">
-                                        </div>
-                                       </a>
+                        <div class="mums-birthday my-5 d-flex justify-content-between align-items-center">
+                                <div class="info d-flex align-items-center">
+                                    <h4> <b> 8 </b><br> Apr</h4>
+                                    <h3>Mum's Birthday</h3>
+                                </div>
+                                <div class="checkout-base d-flex align-items-center">
+                                    <button>...</button>
+                                    <div class="actions d-lg-block d-none">
+                                        <a href="/">Find gift <br> for 8 Apr</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Friend's Birthday</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Anniversary</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Relative's Birthday</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Mother's Day</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Mother's Day</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Mother's Day</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="occasion-type-list">
-                                    <div class="picture">
-                                        <a href="/">
-                                            <img src="assets/images/best-seller-1.webp" alt="">
-                                            <div class="layer-box">
-                                                <h4>Mother's Day</h4>
-                                                <img src="assets/images/arrow-c.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="actions text-center">
-                            <a href="javascript:void(0)" onclick="occasionpopup()"><img src="assets/images/timer-icon-white.svg" class="mr-2" alt="">Add Occasions</a>
+                            <a href=""><img src="assets/images/timer-icon-white.svg" class="mr-2" alt="">Add Occasions</a>
                             <p>Add <b> 3 </b>reminders for <b> £5 off </b></p>
                         </div>
                     </div>
