@@ -186,8 +186,8 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .product-collections .product-tophead .filter h5 {font-size: 15px;font-weight: 400;margin-left: 12px;color: #94999e;margin-bottom: 0;}
 .product-collections .product-tophead .sort {display: inline-block;color: #262626 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 10px 15px;font-size: 17px;font-weight: 500;margin: 0;}
 
-.product-collections .product-grid {background-color: #f9ecd7;padding: 8px 8px;display:flex; flex-wrap:wrap;}
-.product-collections .product-grid .product-item {flex:0 0 33.33%; width:33.33%;}
+.product-collections .product-grid {background-color: #f9ecd7;padding: 15px 0;display:flex;flex-wrap:wrap;}
+.product-collections .product-grid .product-item {flex:0 0 33.33%;width:33.33%;padding: 0 15px;}
 
 /* Product Box */
 .product-collections .product-box {background-color: #fff;padding-bottom: 26px;margin-bottom: 30px;}
@@ -206,49 +206,30 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .product-collections .product-box .details h4 {color: grey;font-size: 16px;font-weight: 500;}
 .product-collections .product-box .price h5 {color: #262626;font-size: 17px;font-weight: 600; margin:0;}
 
-.product-collections .product-box .button a {display: inline-block;padding: 10px 30px;font-weight: 500;background: #262626;color: #fff;border: 2px solid #262626;margin-left: 17px;}
+.product-collections .product-box .button a {display: inline-block;padding: 10px 25px;font-weight: 500;background: #262626;color: #fff;border: 2px solid #262626;margin-left: 17px;}
 .product-collections .product-box .reviews .stars img {width: 15px;}
 .product-collections .product-box .reviews span {color: #262626;font-weight: 500;font-size: 16px;margin-left: 6px;margin-top: 3px;display: inline-block;}
 
 
 /*   SHOW FILTERS   */
 
-.flowers-plants .content-area {border-bottom: 1px solid rgb(204, 202, 202);height: auto;padding-bottom: 30px;}
-.flowers-plants .delivery {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
-.flowers-plants .delivery p {color: rgb(194, 190, 190);}
-.flowers-plants .nextday {display: flex;align-items: center;justify-content: start;}
-.flowers-plants .nextday img {width: 20px;height: auto;}
-.flowers-plants .nextday h6 {padding-left: 10px;color: #262626;}
-.flowers-plants .specific {display: flex;align-items: center;justify-content: start;padding-top: 10px;}
-.flowers-plants .specific img {width: 20px;height: auto;}
-.flowers-plants .specific h6 {padding-left: 10px;color: #262626;}
-.flowers-plants .content-area p {color: rgb(194, 190, 190);}
-.flowers-plants .arrival h5 {padding-top: 20px;color: #262626;}
-.flowers-plants .Letterbox {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
-.flowers-plants .comes {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
-.flowers-plants .content-area p {color: rgb(194, 190, 190);}
-.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
-.flowers-plants .pricerbox {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
-.flowers-plants .content-area p {color: rgb(194, 190, 190);}
-.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
-.flowers-plants .typebox {display: flex;align-items: center;justify-content: space-between;}
-.flowers-plants .content-area p {color: rgb(194, 190, 190);}
-.flowers-plants .content-area img {width: 20px;height: auto;}
-.flowers-plants .colours-area h5 {padding-top: 20px;color: #262626;}
-.flowers-plants .content-area h6 {padding-left: 10px;color: #262626;}
-.flowers-plants .colours {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
-.flowers-plants .col-box {display: flex;align-items: center;justify-content: start;padding-right: 10px;}
-.flowers-plants .content-area p {color: rgb(194, 190, 190);}
-.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
-.flowers-plants .occa-box {display: flex;align-items: center;justify-content: space-between;}
+.product-filters .content-area {border-bottom: 1px solid #dfe1e3;height: auto;padding: 30px 0;}
+.product-filters .content-area h5 {color: #262626;font-size: 18px;margin: 0 0 15px;}
+
+.product-filters .item {display: flex;align-items: center;justify-content: space-between;padding: 8px 0;font-size: 14px;}
+.product-filters .item .icon {margin-right:5px;line-height: 100%;}
+.product-filters .item .icon img {height:18px;}
+.product-filters .item .count {color: rgb(194, 190, 190);}
+
 
 .product-collections .products-filter-wrap {display:flex;}
-.product-collections .products-filter-wrap .product-filter {display:none;}
+.product-collections .products-filter-wrap .product-filters {display:none;}
 
-.product-collections.filter-visible .products-filter-wrap .product-filter {width: 25%; flex:0 0 25%; display:block;}
+.product-collections.filter-visible .products-filter-wrap .product-filters {width: 25%; flex:0 0 25%; padding-right:35px; display:block;}
 .product-collections.filter-visible .products-filter-wrap .product-grid {width:75%; flex:0 0 75%;}
 .product-collections.filter-visible .product-grid .product-item {flex:0 0 50%; width:50%;}
-
+.product-collections.filter-visible .product-tophead .border-filter .showfilters {display:none;}
+.product-collections.filter-visible .product-tophead .border-filter .hidefilters {display:block !important;}
 
 
 
@@ -620,7 +601,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .occasion-btn-popup .occasion-popcon .row .form-group{position:relative;height:62px;width:100%;padding-left:8px}
 .occasion-btn-popup .occasion-popcon .row .form-group h4{position:absolute;top:2px;left:10px;font-size:16px;padding:6px 0;text-indent:15px;font-weight:700;color:#262626}
 .occasion-btn-popup .occasion-popcon .row p{width:60%;color:#262626;font-size:15px;margin-left:10px}
-.icon{font-size:40px}
+.occasion-btn-popup .icon{font-size:40px}
 .occasion-btn-popup .occasion-popcon .actions p{padding:0;width:auto;font-size:13px;text-align:center;margin-top:8px}
 .occasion-btn-popup .occasion-popcon .actions a{display:inline-block;color:#fff!important;background-color:#262626;border:1px solid #262626;padding:10px 20px}
   
@@ -689,20 +670,21 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 @media (max-width:992px){
     header .main-menu .nav-link {font-size: 13px;}
-
     .header-top .top-area-content .actions {display:flex;}
     .header-top .top-area-content .actions a {font-size: 14px;padding: 0 15px;}
+
     .banner .banner-details h2 {font-size: 34px;}
-    .banner .banner-slider img{}
     .banner .banner-details .rating {font-size: 13px;}
     .claim-offer-text h4 {font-size: 17px;}
     .claim-offer-text .actions a { padding: 0 15px;font-size: 14px;}
     .letterbox-flowers .details p {padding: 15px 30px;}
+
     .remember .remember-wrapper .remember-box h2 {font-size: 30px;}
     .remember .remember-wrapper .remember-box h2 br{display: none;}
     .remember .remember-wrapper .remember-box {padding: 30px 25px;}
     .remember .remember-wrapper .actions a {padding: 0 15px;font-size: 16px;}
     .claim-offer-text {margin-top: 50px;}
+
     .best-seller .tophead h2 { font-size: 35px;}
     .best-seller .best-seller-wrapper .title h4 { font-size: 18px;}
     .best-seller .best-seller-wrapper .details .actions a {font-size: 14px; padding: 0 19px;}
@@ -718,6 +700,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .about-us-content .about-content-box {font-size: 12px;}
 
     footer .footer-wrapper .contact img {width: 115px;}
+    
     .order-header .order-header-content .order-progress h4 {font-size: 16px;}
     .order-header .order-header-content .order-progress .line {width: 30px;}
     .order-header .order-header-content .order-progress .steps h4 {font-size: 14px; padding: 0 3px;}
@@ -733,12 +716,15 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .your-details .your-details-row .vertical-line {width: auto;}
     .your-details .your-details-row .guest-feilds .form-group input {width: 100%;}
     .your-details .your-details-row .guest-feilds a {width: 100%;}
+    
     .product-collections .product-box .details h3 a { font-size: 19px;}
     .product-collections .product-box .details .reviews span {font-size: 14px;}
     .online-florists .tophead h3 { font-size: 22px;}
     .online-florists .row .florist-box .text p {font-size: 15px;}
+    
     .breadcrumb .breadcrumb-content a {font-size: 15px;}
     .breadcrumb .breadcrumb-content h4 {font-size: 15px;}
+    
     .product-details .details-top .actions a {font-size: 14px;}
     .product-details .details-grid-row .picture { background-color:transparent; padding: 0px;margin: 0;}
     .product-details .details-top h1 { font-size: 25px;}
