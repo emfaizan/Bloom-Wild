@@ -211,6 +211,36 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .product-collections .product-box .reviews span {color: #262626;font-weight: 500;font-size: 16px;margin-left: 6px;margin-top: 3px;display: inline-block;}
 
 
+/*   SHOW FILTERS   */
+
+.flowers-plants .content-area {border-bottom: 1px solid rgb(204, 202, 202);height: auto;padding-bottom: 30px;}
+.flowers-plants .delivery {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
+.flowers-plants .delivery p {color: rgb(194, 190, 190);}
+.flowers-plants .nextday {display: flex;align-items: center;justify-content: start;}
+.flowers-plants .nextday img {width: 20px;height: auto;}
+.flowers-plants .nextday h6 {padding-left: 10px;color: #262626;}
+.flowers-plants .specific {display: flex;align-items: center;justify-content: start;padding-top: 10px;}
+.flowers-plants .specific img {width: 20px;height: auto;}
+.flowers-plants .specific h6 {padding-left: 10px;color: #262626;}
+.flowers-plants .content-area p {color: rgb(194, 190, 190);}
+.flowers-plants .arrival h5 {padding-top: 20px;color: #262626;}
+.flowers-plants .Letterbox {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
+.flowers-plants .comes {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
+.flowers-plants .content-area p {color: rgb(194, 190, 190);}
+.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
+.flowers-plants .pricerbox {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
+.flowers-plants .content-area p {color: rgb(194, 190, 190);}
+.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
+.flowers-plants .typebox {display: flex;align-items: center;justify-content: space-between;}
+.flowers-plants .content-area p {color: rgb(194, 190, 190);}
+.flowers-plants .content-area img {width: 20px;height: auto;}
+.flowers-plants .colours-area h5 {padding-top: 20px;color: #262626;}
+.flowers-plants .content-area h6 {padding-left: 10px;color: #262626;}
+.flowers-plants .colours {display: flex;align-items: center;justify-content: space-between;padding-top: 10px;}
+.flowers-plants .col-box {display: flex;align-items: center;justify-content: start;padding-right: 10px;}
+.flowers-plants .content-area p {color: rgb(194, 190, 190);}
+.flowers-plants .content-area h5 {padding-top: 20px;color: #262626;}
+.flowers-plants .occa-box {display: flex;align-items: center;justify-content: space-between;}
 
 .product-collections .products-filter-wrap {display:flex;}
 .product-collections .products-filter-wrap .product-filter {display:none;}
