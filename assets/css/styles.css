@@ -675,9 +675,42 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .order-form-details .gift-card-action a{border-bottom:2px solid #262626;color: #262626;font-weight: 500;font-size: 16px;display: inline-block;}
 .order-form-details .gift-card-action{padding-top: 16px;}
 
+/*   MARKETING PREFERENCES  */
+
+.main-account-tabs .row .marketing-preferences-lists{padding: 0 40px 40px;}
+.main-account-tabs .row .content-prefernces {display: flex;align-items: flex-start;justify-content: flex-start;padding-top: 10px;}
+.main-account-tabs .row .marketing-preferences-lists h1{font-family:'Playfair Display',serif;font-weight: 700;color: #262626;font-size: 28px;} 
+.main-account-tabs .row .marketing-preferences-lists h3{font-family:'Playfair Display',serif;font-weight: 700;color: #262626;font-size: 21px;margin-top: 20px;} 
+.main-account-tabs .row .marketing-preferences-lists .form-check-label {color: #262626;font-weight: 500;}
+.main-account-tabs .row .marketing-preferences-lists small{color: #262626;}
+.main-account-tabs .row .marketing-preferences-lists input[type="checkbox"] {width: 15px !important;height: 15px !important;margin-right: 5px;-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;box-shadow: none;font-size: 2em;border: 2px solid rgb(241, 241, 241);border-radius: 50% !important;border-color: royalblue;}
+  .main-account-tabs .row .marketing-preferences-lists .text-content p {font-size: 14px;color: #262626;}
+  .main-account-tabs .row .marketing-preferences-lists .btn-area {color: #fff !important;background-color: #262626;border: 1px solid #262626;padding: 12px;}
+  .main-account-tabs .row .marketing-preferences-lists .text-prahgraph p{color: #262626;font-size: 14px;}
+  .main-account-tabs .row .marketing-preferences-lists .text-prahgraph {padding-top: 50px;}
+  .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences {padding-top: 30px;}
+  .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences h3 {color: #262626;padding-top: 30px;}
+  .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences h4 {padding-top: 30px;color: #94999e;text-align: center;font-weight: 400;}
+  .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences .actions a {padding-top: 30px;text-align: center;color: #262626;display: inline-block;font-size: 16px;padding-bottom: 3px;border-bottom: 1px solid #262626;font-weight: 500;}
+  .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences p{color: #262626;font-size: 14px;}
+ 
+ /*    DELIVERY ADDRESS   */
+ 
+ .main-account-tabs .row .delivery-address-lists .content {display: flex;align-items: center;justify-content: space-between;}
+ .main-account-tabs .row .delivery-address-lists .content-ad {display: flex;justify-content: space-between;padding-top: 15px;}
+ .main-account-tabs .row .delivery-address-lists .btn-address {padding:8px 15px;color: #fff !important;background-color: #447964;border: 1px solid #447964;}
+ .main-account-tabs .row .delivery-address-lists .edit-btn {color: #447964 !important;background-color: #fff;border: 2px solid #447964;padding: 7px 16px;}
+ .main-account-tabs .row .delivery-address-lists .delete-btn {color: #447964 !important;background-color: #fff;border: 2px solid #dfe1e3;padding: 7px 16px;}
+ .main-account-tabs .row .delivery-address-lists .content h2{color: #262626;font-size: 28px;font-weight: 700;font-family:'Playfair Display',serif;}
+ .main-account-tabs .row .delivery-address-lists li{color: #262626;font-size: 15px;}
 
 
-/*  MEDIA QUERY   */
+
+
+
+
+
+  /*  MEDIA QUERY   */
 
 @media (max-width:1200px){
     .checkout-main .container{max-width: 525px;width: 100%;}
@@ -765,6 +798,15 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .main-account-tabs .row .my-favourites-lists .title h4 {font-size: 19px;}
     .main-account-tabs .row .my-favourites-lists .title span {font-size: 13px;}
     .main-account-tabs .row .my-favourites-lists .details a {font-size: 13px; padding: 10px 14px;}
+
+    .main-account-tabs .row .marketing-preferences-lists h1 {font-size: 23px;}
+    .marketing-preferences-lists h3 {font-size: 19px;}
+    .main-account-tabs .row .marketing-preferences-lists .form-check-label {font-size: 15px;}
+    .main-account-tabs .row .marketing-preferences-lists .btn-area {padding: 10px;font-size: 14px;}
+    .main-account-tabs .row .marketing-preferences-lists .Postal-Preferences h4 {font-size: 20px;}
+
+    .main-account-tabs .row .credit-lists-items .panel-display p {font-size: 20px;}
+    .main-account-tabs .row .credit-lists-items .panel-display a {font-size: 11px;padding: 10px 14px;}
 }
 
 @media (max-width:768px){
@@ -917,6 +959,8 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .order-form-details .subscription-promo {font-size: 13px;}
     .order-form-details .gift-card-action a {font-size: 14px;}
     .order-form-details .gift-card-heading h5 {font-size: 15px;}
+
+    .main-account-tabs .row .credit-lists-items .panel-display p {font-size: 15px;}
 }
 
 

@@ -1,57 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <title>Delivery Address</title>
 </head>
 <body>
 
-    <!---CREATE ADDRESS POPUP--->
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
 
-      <div class="create-address-popup" id="create-address">
-          <div class="back-overlay"></div>
-         <div class="create-address-content">
-             <div class="create-address-top d-flex justify-content-between">
-                 <h2>Create Address</h2>
-                 <img src="assets/images/form-cancel.svg" alt="">
-             </div>
-             <div class="form-input-areaa">
-                 <div class="form-group">
-                    <input type="text" placeholder="Reciepent name">
+                <div class="top-area-content">
+
+                    <div class="top-left">
+                        <div class="flex-area d-flex align-items-center">
+                            <div class="mobile-menu-trigger">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/burger.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="login d-flex align-items-center">
+                                <div class="picture">
+                                    <img src="assets/images/login.svg" onclick="userpop()" alt="">
+                                </div>
+                                <div class="register d-lg-block d-none">
+                                    <a href="javascript:void(0)" onclick="login()">Log in / Register</a>
+                                </div>
+                            </div>
+                            <div class="ship-country d-lg-flex d-none ml-4">
+                                <h4>Ship to:</h4>
+
+                                <!-- FLAG SELECTOR -->
+                                <div class="dropdown flag-selector">
+                                    <button class="dropdown-toggle" type="button" id="flagSelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/images/country.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="flagSelector">
+                                        <a class="dropdown-item" href="#"><img src="assets/images/country.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-ie.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-fr.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-center">
+                        <div class="logo">
+                            <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                    
+                    <div class="top-right">
+                        <div class="shop-now d-flex align-items-center">
+                            <div class="heart">
+                                <img src="assets/images/heart-border.svg" alt="">
+                            </div>
+                            <div class="actions">
+                                <a href="/">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="form-group">
-                   <input type="text" placeholder="Comapny">
-                   <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+
+        <div class="header-menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul class="nav items-list">
+                        <li><a href="/" class="nav-link">Available soonest <span>new</span> </a></li>
+                        <li class="has-megamenu">
+                            <a href="Javascript:void(0)" class="nav-link">Letterbox flowers </a>
+                            
+                            <div class="megamenu-wrap" style="position:absolute;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox flowers</a></li>
+                                                <li><a href="#">Pastels</a></li>
+                                                <li><a href="#">Bold &amp; bright</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Luxury picks</a></li>
+                                                <li><a href="#">All letterbox flowers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox plants</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Just because</a></li>
+                                                <li><a href="#">Desk decoration</a></li>
+                                                <li><a href="#">All Letterbox plants</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <ul class="featured-category">
+                                                <a href="#">
+                                                    <div class="picture">
+                                                        <img src="//images.ctfassets.net/ucgi79tscdcj/128HO0QNxHjOdbswE5vxd7/cb1e2f822522cb230aff517c63c242d5/tessa_lb_main.jpeg?w=320&amp;fm=webp">
+                                                    </div>
+                                                    <div class="name"><a href="#">Shop seasonal bouquets</a></div>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/" class="nav-link">Hand-tied Bouquets </a></li>
+                        <li><a href="/" class="nav-link">Monthly flowers </a></li>
+                        <li><a href="/" class="nav-link">Plants & home </a></li>
+                        <li><a href="/" class="nav-link">Occasions  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
+                        <li><a href="/" class="menu-link d-lg-block d-none">Get help fast</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---START Address Page-->
+
+    <section class="main-account-tabs mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-md-block d-none">
+                    <div class="account-nav">
+                        <ul>
+                            <li><a href="my-orders.html"><span>My Orders</span></a></li>
+                            <li><a href="my-occasions.html"><span>My Occasions</span></a></li>
+                            <li><a href="my-favourites.html"><span>My Favourites</span></a></li>
+                            <li><a href="my-credit.html"><span>My Credit</span></a></li>
+                            <li class="active"><a href="delivery-address.html"><span>Delivery Addresses</span></a></li>
+                            <li><a href="marketing-preferences.html"><span>Marketing Preferences</span></a></li>
+                            <li><a href="payment-options.html"><span>Payment Options</span></a></li>
+                            <li><a href="account-detail.html"><span>Account details</span></a></li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="col-md-9">
+                    <div class="delivery-address-lists">
+                        <div class="content">
+                        <div class="address-area">
+                                <h2>Address</h2>
+                        </div>
+                        <div class="btn-content">
+                            <button class="btn-address">Add address</button>
+                        </div>
+                        </div>
+                    <div class="content-ad mt-3">
+                    <div class="address-details">
+                        <ul>
+                            <li> <b> Ahsan </b></li>
+                            <li>21 Church Street</li>
+                            <li>Loanhead</li>
+                            <li>EH20 9AA</li>
+                            <li>United Kingdom</li>
+                            <li> <u> Set as billing address</u></li>
+
+                        </ul>
+                    </div>  
+                    <div class="btn-content">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    </div>
+                    <div class="content-ad">
+                        <div class="address-details">
+                            <ul>
+                                <li> <b> Ahsan </b></li>
+                                <li>21 Church Street</li>
+                                <li>Loanhead</li>
+                                <li>EH20 9AA</li>
+                                <li>United Kingdom</li>
+                                <li> <u> Set as billing address</u></li>
+    
+                            </ul>
+                        </div> 
+                        <div class="btn-content">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                        </div>
+                        <div class="content-ad">
+                            <div class="address-details">
+                                <ul>
+                                    <li> <b> Ahsan </b></li>
+                                    <li>21 Church Street</li>
+                                    <li>Loanhead</li>
+                                    <li>EH20 9AA</li>
+                                    <li>United Kingdom</li>
+                                    <li> <u> Set as billing address</u></li>
+        
+                                </ul>
+                            </div> 
+                            <div class="btn-content">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                            </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Line 1">
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Line 2">
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="City">
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Post Code">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="select" placeholder="Country">
+            </div>
+        </div>
+    </section>
+
+     <!---END Address Page-->
+   
+
+    <!---FOOTER--->
+
+   <!-- FOOTER -->
+   <footer>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-md-auto">
+                            <div class="logo hidden-xs text-lg-left text-center">
+                                <img src="assets/images/footer-logo.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md">
+                            <div class="contact">
+                                <h5>Email us <b> here</b></h5>
+                                <div class="flex-area d-flex flex-lg-column flex-row align-items-lg-start align-items-center">
+                                <div class="social-icons">
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="picture">
+                                    <img src="assets/images/google-store.svg" alt="">
+                                </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
                 </div>
                 
-             </div>
-             <div class="actions d-flex justify-content-end align-items-center mt-4">
-               <a href="/" class="cancel">Cancel</a>
-               <a href="/" class="address">Save address</a>
-             </div>
-         </div>
-      </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-3 mt-lg-0 mt-md-5">
+                            <div class="footer-box">
+                                <h4>About us</h4>
+                                <ul>
+                                    <li><a href="/">Our story</a></li>
+                                    <li><a href="/">Happiness guaranteed</a></li>
+                                    <li><a href="/">Our florists</a></li>
+                                    <li><a href="/">Sustainability</a></li>                        
+                                    <li><a href="/">Our tech blog</a></li>                      
+                                    <li><a href="/">Careers</a></li>                           
+                                    <li><a href="/">Modern Slavery Act</a></li>                               
+                                    <li><a href="/">Sitemap</a></li>                                                         
+                                </ul>
+                            </div> 
+                        </div>
 
-    <!---CREATE ADDRESS POPUP--->
+                        <div class="col-md-3 mt-lg-0 mt-md-5">
+                            <div class="footer-box">
+                                <h4>Our flowers</h4>
+                                <ul>
+                                    <li><a href="/">Flower care</a></li>
+                                    <li><a href="/">Flower journal</a></li>
+                                    <li><a href="/">Workshops</a></li>
+                                    <li><a href="/">Flower subscriptions</a></li>                        
+                                                                                    
+                                </ul>
+                            </div> 
+                        </div>
+                    
+                        <div class="col-md-3 mt-lg-0 mt-md-5">
+                            <div class="footer-box">
+                                <h4>Need help?</h4>
+                                <ul>
+                                    <li><a href="/">Contact us</a></li>                           
+                                    <li><a href="/">Delivery</a></li>                               
+                                    <li><a href="/">Reviews</a></li>
+                                    <li><a href="/">Refer a friend</a></li>                                                                            
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-lg-0 mt-md-5">
+                            <div class="footer-box">
+                                <h4>International sites</h4>
+                                <ul>
+                                    <li><a href="/">Bloom & Wild France</a></li>                           
+                                    <li><a href="/">Bloom & Wild Germany</a></li>                               
+                                    <li><a href="/">Bloom & Wild Ireland</a></li>
+                                    <li><a href="/">Bloom & Wild Australia</a></li>                                                                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!---FOOTER--->
     
 </body>
 </html>
+
+
+
