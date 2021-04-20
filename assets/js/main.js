@@ -9,6 +9,15 @@ function create(){
 } 
 
 
+$(document).on('click', '#login .back-overlay', function(){
+    login();
+});
+
+$(document).on('click', '#userpopup .back-overlay', function(){
+    userpop();
+});
+
+
 $(document).on('click', '.mobile-menu-trigger a', function(){
     $('body').toggleClass('mobile-menu-active');
 
