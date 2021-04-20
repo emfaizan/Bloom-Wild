@@ -675,8 +675,9 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 @media (max-width:992px){
     header .main-menu .nav-link {font-size: 13px;}
+    .header-top .container {max-width:100%;}
     .header-top .top-area-content .actions {display:flex;}
-    .header-top .top-area-content .actions a {font-size: 14px;padding: 0 15px;}
+    .header-top .top-area-content .actions a {font-size: 13px;padding: 0 10px;}
 
     .banner .banner-details h2 {font-size: 34px;}
     .banner .banner-details .rating {font-size: 13px;}
@@ -740,7 +741,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .product-details .product-reviews h3 {font-size: 22px;}
     .product-details .product-reviews p {font-size: 15px;}
     .product-details .happiness-guaranted p {font-size: 15px;width: 70%;padding: 0;margin: auto;}
-    .product-details {padding-bottom: 60px;}
+    .product-details {padding-bottom: 60px;position: relative;}
     .main-account-tabs .account-list ul li:nth-child(n+2) {width: 50%;}
     .product-collections .product-grid .product-item {flex: 0 0 50%; width: 50%;}
     .product-collections .product-tophead .page-title {text-align: left;order: -1;width: 100%;flex: 0 0 100%;padding-bottom: 40px;}
@@ -751,7 +752,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
 @media (max-width:768px){
     /* Header */
-    .header-top {padding: 9px 0;border-bottom: 1px solid #dfe1e3;box-shadow: 1px 5px 4px rgb(0 0 0 / 5%);margin: 0 0 11px;}
+    .header-top {padding: 9px 0;border-bottom: 1px solid #dfe1e3;box-shadow: 1px 5px 4px rgb(0 0 0 / 5%);margin: 0;}
     .header-top .top-area-content .logo img {height: 45px;}
 
     .mobile-menu-trigger {display:block;}
@@ -845,9 +846,21 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 
     .online-florists .tophead p { font-size: 14px;}
     .breadcrumb {padding: 20px 0;}
+
+    /* PRODUCT FILTERS */
+    .product-collections.filter-visible .products-filter-wrap .product-filters {position:fixed;top:0;right: -20px;bottom:0;padding:20px 30px !important;width: 300px;flex: 0 0 300px;z-index:99999;background:#fff;padding:15px;overflow:auto;}
     
     /* PRODUCT DETAILS */ 
-    .product-details .details-top {padding: 25px 15px;}
+    .breadcrumb .item a {font-size:14px;}
+    .breadcrumb .delimeter {margin:0 5px;}
+    .breadcrumb .item h4 {font-size:15px; font-weight:normal;}
+
+    .details-page .container {max-width:420px;}
+    .product-details .details-top {padding: 15px;border: 0;}
+    
+    .details-grid-row .row .col-lg-6 {position:static;}
+
+    .product-details .actions {width: 100%;left: 0;position: -webkit-sticky;position: sticky;background: #fff;top: 0;}
     .product-details .actions a{margin:8px;text-align:center;display: block;font-weight: 500;background: #262626; color: #fff;border: 2px solid #262626;padding: 9px 30px;font-size: 16px;font-weight: 500;}
     
     .product-details .details-grid-box h3 {font-size: 20px;}
@@ -870,7 +883,11 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .occasion-btn-popup .occasion-popcon .occasion-popup p { padding: 0 60px;}
     .occasion-btn-popup .occasion-popcon{width: 100%;}
     .main-account-tabs .row .occasions-list {max-width: 450px; width: 100%; margin: auto;}
-    .product-collections.filter-visible .product-grid .product-item {flex: 0 0 100%;width: 100%;}
+
+    .product-collections .container {max-width:420px;}
+    .product-collections .product-grid .product-item {flex: 0 0 100% !important;width: 100% !important;}
+    .product-collections .products-filter-wrap .product-grid {width: 100% !important;flex: 0 0 100% !important;}
+    
     .product-collections .product-tophead .border-filter {width: 100%;text-align: center;}
     .product-collections .product-tophead .sort {width: 100%;display: flex;justify-content: center;}
     .product-collections .product-tophead .filter {margin-right: 0px;}

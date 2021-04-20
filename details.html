@@ -29,6 +29,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
    
     <title>Home</title>
 </head>
@@ -198,21 +203,23 @@
                     <div class="wrapper d-flex align-items-center justify-content-between">
                         <div class="heading">
                             <h1>The Ori</h1>
-                            <img src="assets/images/star-new.svg" height="18px" alt="">
-                            <img src="assets/images/star-new.svg" height="18px" alt="">
-                            <img src="assets/images/star-new.svg" height="18px" alt="">
-                            <img src="assets/images/star-new.svg" height="18px" alt="">
-                            <img src="assets/images/star-new.svg" height="18px" alt="">
-                            <span>4.85 (40)</span>
-                    
+
+                            <div class="rating">
+                                <img src="assets/images/star-new.svg" height="18px" alt="">
+                                <img src="assets/images/star-new.svg" height="18px" alt="">
+                                <img src="assets/images/star-new.svg" height="18px" alt="">
+                                <img src="assets/images/star-new.svg" height="18px" alt="">
+                                <img src="assets/images/star-new.svg" height="18px" alt="">
+                                <span>4.85 (40)</span>
+                            </div>
                         </div>
                         <div class="button d-flex align-items-center">
                             <div class="heart d-lg-block d-none">
-                            <img src="assets/images/heart-border.svg" alt="">
-                        </div>
-                        <div class="actions d-md-block d-none">
-                            <a href="/">Send now <b>£</b>38</a>
-                        </div>
+                                <img src="assets/images/heart-border.svg" alt="">
+                            </div>
+                            <div class="actions d-md-block d-none">
+                                <a href="/">Send now <b>£</b>38</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,8 +229,40 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="picture">
-                                <img src="assets/images/details-1.webp" alt="">
+                                <div class="main-image">
+                                    <a href="assets/images/details-1.webp" data-group="1">
+                                        <img src="assets/images/details-1.webp" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="product-thumbs" style="display:none;">
+                                    <div class="image">
+                                        <a href="assets/images/details-3.webp" data-group="1">
+                                            <img src="assets/images/details-3.webp" width="40" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="image">
+                                        <a href="assets/images/details-1.webp" data-group="1">
+                                            <img src="assets/images/details-1.webp" width="40" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="image">
+                                        <a href="assets/images/details-3.webp" data-group="1">
+                                            <img src="assets/images/details-3.webp" width="40" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
+                            <script>
+                                $('.picture a').magnificPopup({
+                                    type: 'image',
+                                    gallery:{
+                                        enabled:true
+                                    }
+                                });
+                            </script>
+
                             <div class="actions d-md-none d-block">
                                 <a href="/">Send now <b>£</b>38</a>
                             </div>
