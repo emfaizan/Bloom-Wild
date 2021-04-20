@@ -357,8 +357,14 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .product-details .details-top span{color:grey;font-size: 14px;font-weight: 300;}
 .product-details .details-top .heart img{width:30px;margin-right:20px}
 .product-details .details-top .actions a{font-weight:500;background:#262626;color:#fff;border:2px solid #262626;display:inline-block;padding:9px 30px;font-size:16px;font-weight:500}
-.product-details .details-grid-row .picture{background-color:#f9ecd7;padding:15px;}
-.product-details .details-grid-row .picture img{width:100%}
+
+.product-details .picture{background-color:#f9ecd7;padding:15px;}
+.product-details .picture img{width:100%;}
+.product-details .product-thumbs {display:flex;flex-wrap: wrap; margin:0 -5px;}
+.product-details .product-thumbs .image{width:25%;flex:0 0 25%;padding: 10px 5px 0;}
+.product-details .product-thumbs .image a {display:block; position:relative;overflow: hidden;}
+.product-details .product-thumbs .image a:after{content:''; display:block; padding-top:70%;}
+.product-details .product-thumbs .image img{border:1px solid #fff; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%);}
 
 .product-details .details-grid-box{padding: 0;}
 .product-details .details-grid-box h3{font-size:25px;color:#262626;font-weight: 900;font-family:'Playfair Display',serif;}
