@@ -26,66 +26,126 @@
 </head>
 <body>
 
-    <!--TOP AREA--->
+     <!-- Header -->
+     <header>
+        <div class="header-top">
+            <div class="container">
 
-    <section class="top-area">
-        <div class="container">
-            <div class="top-area-content d-flex justify-content-between align-items-center">
-                <div class="flex-area d-flex align-items-center">
-                <div class="login d-flex align-items-center">
-                    <div class="picture">
-                        <img src="assets/images/login.svg" alt="">
+                <div class="top-area-content">
+
+                    <div class="top-left">
+                        <div class="flex-area d-flex align-items-center">
+                            <div class="mobile-menu-trigger">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/burger.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="login d-flex align-items-center">
+                                <div class="picture">
+                                    <img src="assets/images/login.svg" onclick="userpop()" alt="">
+                                </div>
+                                <div class="register d-lg-block d-none">
+                                    <a href="javascript:void(0)" onclick="login()">Log in / Register</a>
+                                </div>
+                            </div>
+                            <div class="ship-country d-lg-flex d-none ml-4">
+                                <h4>Ship to:</h4>
+
+                                <!-- FLAG SELECTOR -->
+                                <div class="dropdown flag-selector">
+                                    <button class="dropdown-toggle" type="button" id="flagSelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/images/country.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="flagSelector">
+                                        <a class="dropdown-item" href="#"><img src="assets/images/country.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-ie.svg" alt=""></a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/flag-fr.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
                     </div>
-                    <div class="register d-lg-block d-none">
-                        <a href="/" onclick="">Log in / Register</a>
+
+                    <div class="top-center">
+                        <div class="logo">
+                            <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="ship-country d-lg-flex d-none ml-4">
-                    <h4>Ship to:</h4>
-                    <img src="assets/images/country.svg" alt="">
-                </div>
-                </div>
-                <div class="logo">
-                    <a href="/">
-                    <img src="assets/images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="shop-now d-flex align-items-center">
-                    <div class="heart">
-                        <img src="assets/images/heart-border.svg" alt="">
+                    
+                    <div class="top-right">
+                        <div class="shop-now d-flex align-items-center">
+                            <div class="heart">
+                                <img src="assets/images/heart-border.svg" alt="">
+                            </div>
+                            <div class="actions">
+                                <a href="/">Shop Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="actions">
-                        <a href="/">Shop Now</a>
-                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+        
 
-    <!--TOP AREA--->
+        <div class="header-menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul class="nav items-list">
+                        <li><a href="/" class="nav-link">Available soonest <span>new</span> </a></li>
+                        <li class="has-megamenu">
+                            <a href="Javascript:void(0)" class="nav-link">Letterbox flowers </a>
+                            
+                            <div class="megamenu-wrap" style="position:absolute;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox flowers</a></li>
+                                                <li><a href="#">Pastels</a></li>
+                                                <li><a href="#">Bold &amp; bright</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Luxury picks</a></li>
+                                                <li><a href="#">All letterbox flowers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Letterbox plants</a></li>
+                                                <li><a href="#">Less than £35</a></li>
+                                                <li><a href="#">Just because</a></li>
+                                                <li><a href="#">Desk decoration</a></li>
+                                                <li><a href="#">All Letterbox plants</a></li>
+                                            </ul>
+                                        </div>
 
-    <!---HEADER--->
-    
-    <header class="d-md-block d-none">
-         <div class="container">
-             <nav class="main-menu">
-               <ul class="nav items-list d-flex justify-content-between">
-                  <li><a href="/" class="nav-link">Avalaible soonest  <span>new</span> </a></li>
-                  <li><a href="/" class="nav-link">Letterbox flowers  </a></li>
-                  <li><a href="/" class="nav-link">Hand-tied Bouquets  </a></li>
-                  <li><a href="/" class="nav-link">Monthly flowers  </a></li>
-                  <li><a href="/" class="nav-link">Plants & home  </a></li>
-                  <li><a href="/" class="nav-link">Occasions  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
-                  <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
-                  <a href="/" class="menu-link d-lg-block d-none">Get help fast</a>
-               </ul>
-             </nav>
-         </div>
+                                        <div class="col-md-4">
+                                            <ul class="featured-category">
+                                                <a href="#">
+                                                    <div class="picture">
+                                                        <img src="//images.ctfassets.net/ucgi79tscdcj/128HO0QNxHjOdbswE5vxd7/cb1e2f822522cb230aff517c63c242d5/tessa_lb_main.jpeg?w=320&amp;fm=webp">
+                                                    </div>
+                                                    <div class="name"><a href="#">Shop seasonal bouquets</a></div>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/" class="nav-link">Hand-tied Bouquets </a></li>
+                        <li><a href="/" class="nav-link">Monthly flowers </a></li>
+                        <li><a href="/" class="nav-link">Plants & home </a></li>
+                        <li><a href="/" class="nav-link">Occasions  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">Business  </a></li>
+                        <li><a href="/" class="nav-link d-lg-block d-none">All</a></li>
+                        <li><a href="/" class="menu-link d-lg-block d-none">Get help fast</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-
-
-    <!---HEADER--->
 
     <!---START Marketing preferences page-->
 
@@ -93,8 +153,21 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-4">My order </div>
-                <div class="col-8">
+                <div class="col-md-3 d-md-block d-none">
+                    <div class="account-nav">
+                        <ul>
+                            <li><a href="my-orders.html"><span>My Orders</span></a></li>
+                            <li><a href="my-occasions.html"><span>My Occasions</span></a></li>
+                            <li><a href="my-favourites.html"><span>My Favourites</span></a></li>
+                            <li><a href="my-credit.html"><span>My Credit</span></a></li>
+                            <li><a href="delivery-address.html"><span>Delivery Addresses</span></a></li>
+                            <li class="active"><a href="marketing-preferences.html"><span>Marketing Preferences</span></a></li>
+                            <li><a href="payment-options.html"><span>Payment Options</span></a></li>
+                            <li><a href="account-detail.html"><span>Account details</span></a></li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="col-md-9">
 
                     <div class="content-marketing">
                         <h1>Marketing preferences</h1>
