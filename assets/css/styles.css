@@ -651,18 +651,23 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
 .main-account-tabs .row .payment-options-lists .components-card h3{color: #94999e;font-weight: 400;font-size: 30px;}
 .main-account-tabs .row .payment-options-lists .components-card .actions a{color: #262626;text-decoration: underline;font-size: 16px;font-weight: 500;display: inline-block;margin-top: 15px;}
 
+/*   ORDER FORM  */
 
-
-
-
-
-
-
-
-
-
-
-
+.order-form-details{max-width: 525px;width: 100%;margin: auto;text-align: center;}
+.order-form-details .title-heading h2{color: #262626;font-size: 27px;font-family:'Playfair Display',serif;font-weight: 700;}
+.order-form-details .subscription-promo{max-width: 415px;padding: 12px 16px;background: #dfe1e3;position: relative;margin: auto;font-size: 14px;color: #262626;margin-top:16px;}
+.order-form-details .subscription-promo::after{top: 100%;right: calc(25% - 4px);content: "";height: 0;width: 0;position: absolute;pointer-events: none;border: 8px solid hsla(0,0%,96.1%,0);border-top-color: #dfe1e3;margin-left: -8px;}
+.order-form-details .button-groups{margin-top: 20px;display: flex;justify-content: center;}
+.order-form-details .button-groups .component-availability-1{color: #fff!important;background-color: #447964;border: 2px solid #447964;padding: 10px 17px;font-size: 14px;font-weight: 500;}
+.order-form-details .button-groups .component-availability-2{color: #447964!important;background-color: #fff;border: 2px solid #447964;padding: 10px 17px;font-size: 14px;font-weight: 500;}
+.order-form-details .gift-card-heading h5{color: #262626;font-size: 17px;font-family: 600;margin-top: 30px;padding-bottom: 16px;}
+.order-form-details .gift-card-container{display: flex;}
+.order-form-details .gift-card-container .cover-image{width: 150px;margin-right: 12px;padding: 12px;background: #f9f9f9;border: 1px solid #b8bbbe;}
+.order-form-details .gift-card-container .cover-image img{width: 100%;}
+.order-form-details .gift-card-container .gift-card-message{width: 100%;}
+.order-form-details .gift-card-container .gift-card-message .card-message{text-align: left;height:198px;color: #b8bbbe;border: 1px solid #b8bbbe;padding: 12px;position: relative;background: #fff;}
+.order-form-details .gift-card-action a{border-bottom:2px solid #262626;color: #262626;font-weight: 500;font-size: 16px;display: inline-block;}
+.order-form-details .gift-card-action{padding-top: 16px;}
 
 
 
@@ -748,6 +753,12 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .product-collections .product-tophead {flex-wrap: wrap;}
     .product-collections .product-tophead > div {text-align: left;}
     .product-collections .product-tophead .filter{justify-content: flex-end;margin-right: 10px;} 
+
+    .account-nav ul li a {font-size: 15px;}
+
+    .main-account-tabs .row .my-favourites-lists .title h4 {font-size: 19px;}
+    .main-account-tabs .row .my-favourites-lists .title span {font-size: 13px;}
+    .main-account-tabs .row .my-favourites-lists .details a {font-size: 13px; padding: 10px 14px;}
 }
 
 @media (max-width:768px){
@@ -892,6 +903,14 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .product-collections .product-tophead .sort {width: 100%;display: flex;justify-content: center;}
     .product-collections .product-tophead .filter {margin-right: 0px;}
     .product-collections .product-tophead .border-filter {border-right: none;}
+
+    .order-form-details .gift-card-container .cover-image {width: 100px;}
+    .order-form-details .gift-card-container .gift-card-message .card-message {height: 128px;}
+    .order-form-details .button-groups .component-availability-1 {padding: 10px 14px;font-size: 13px;}
+    .order-form-details .title-heading h2 {font-size: 23px;}
+    .order-form-details .subscription-promo {font-size: 13px;}
+    .order-form-details .gift-card-action a {font-size: 14px;}
+    .order-form-details .gift-card-heading h5 {font-size: 15px;}
 }
 
 
