@@ -156,7 +156,126 @@
     </header>
 
 
+    <div class="login-form shadow-sm" id="login">
+        <div class="back-overlay"></div>
+           <div class="login-content">
+           <div class="title d-flex justify-content-between align-items-center">
+               <h3>Log in</h3>
+                <div class="cancel" onclick="login()">
+                   <img src="assets/images/form-cancel.svg" alt="">
+                </div>
+           </div>
+           <div class="form-group">
+               <input type="text" name="" id="" placeholder="Your email" class="form-control">
+           </div>
+           <div class="form-group">
+            <input type="password" name="" id="" placeholder="password" class="form-control">
+             <div class="eye">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+             </div>
+          </div>
+          <div class="forgot d-flex justify-content-end">
+              <a class="button" href="/">Forgot password?</a>
+          </div>
+          <div class="login">
+              <a href="/" class="button">Log in</a>
+          </div>
+          <div class="login-facebook">
+            <a href="/">Login with facebook</a>
+        </div>
+        <div class="customer text-center mt-5">
+            <p>New customer? <a href="javascript:void(0)" onclick="create()"> <b> Create account</b></a></p>
+        </div>
+       </div>
+    </div>
+    
+    <div class="user-popup shadow-sm" id="userpopup">
+       <div class="back-overlay"></div>
 
+        <div class="user-content">
+            <div class="title d-flex justify-content-between align-items-center">
+                <h3>Account</h3>
+                <div class="cancel">
+                    <img src="assets/images/form-cancel.svg" onclick="userpop()" alt="">
+                </div>
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <a href="my-orders.html" class="border-dark">My Orders</a>
+                </div>
+                <div class="form-group">
+                    <a href="my-occasions.html" class="border-dark">My Occasions</a>
+                </div>
+                <div class="form-group">
+                    <a href="my-favourites.html" class="border-dark"><img src="assets/images/new.svg" alt=""> My Favourites</a>
+                </div>
+                <div class="form-group">
+                    <a href="my-credit.html" class="border-dark">My credit</a>
+                </div>
+                <div class="form-group mt-5">
+                    <a href="delivery-address.html" class="border-gray">Delivery address</a>
+                </div>
+                <div class="form-group">
+                    <a href="marketing-preferences" class="border-gray">Marketing preferences</a>
+                </div>
+                <div class="form-group">
+                    <a href="payment-options.html" class="border-gray">Payment Options</a>
+                </div>
+                <div class="form-group">
+                    <a href="account-detail.html" class="border-gray">Account details</a>
+                </div>
+                <div class="form-group mt-5">
+                    <a href="#" class="border-gray">Download Our App</a>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="border-gray">Need Help?</a>
+                </div>
+            </div>
+            <div class="logout text-center mt-5">
+                <a href="/"> Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-form shadow-sm" id="create-account">
+   
+        <div class="login-content">
+            <div class="title d-flex justify-content-between align-items-center">
+                <h3>Create Account</h3>
+                    <div class="cancel" onclick="create()">
+                    <img src="assets/images/form-cancel.svg" alt="">
+                    </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Your full name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Your email" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Create password" class="form-control">
+                <div class="eye">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex-area d-flex justify-content-between">
+                <p>Keep me updated with special offers, exciting products and news from Bloom & Wild. You can view our privacy policy here and unsubscribe at any time.</p>
+                <div>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                </div>
+            </div>
+            
+            <div class="login">
+                <a href="/" class="button">Create Account</a>
+            </div>
+            <div class="login-facebook">
+                <a href="/">Register with facebook</a>
+            </div>
+            <div class="customer text-center mt-5">
+                <p>New customer? <a href="javascript:void(0)" onclick="login()"> <b> Create account</b></a></p>
+            </div>
+        </div>
+    </div>
 
 
     <!--PRODUCTS COLLECTIONS--->
