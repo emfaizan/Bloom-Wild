@@ -1000,6 +1000,10 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .main-account-tabs .row .payment-options-lists .card-top-title a{font-size: 13px;}
 
     .delivery-details .order-options a {width:100%; flex:0 0 100%;}
+
+    .main-account-tabs .row .my-favourites-lists .title h4 {font-size: 15px;}
+    .main-account-tabs .row .my-favourites-lists .details a {font-size: 12px;padding: 8px 10px;}
+    .main-account-tabs .row .my-favourites-lists .remove a {font-size: 14px;}
 }
 
 
@@ -1009,6 +1013,7 @@ footer .footer-wrapper .footer-box a{color: #262626;font-size: 14px;display: inl
     .checkout-main .checkout-main-categories .details .delivery .actions a {display: block;}
     .checkout-main .checkout-main-categories .payment-options .payment-delivery .button-1 a {padding: 10px 0;}
     .main-account-tabs .row .occasions-add-lists {padding: 0;}
+    .user-auth-section .body .guest-feilds {min-width: auto;}
 }
 
 @media (max-width:340px) {
